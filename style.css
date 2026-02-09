@@ -1,126 +1,136 @@
-/* Estilos generales */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
+/* ===== RESET BÁSICO ===== */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f5f0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background-color: #f4f6f5;
   color: #333;
-  text-align: center;
+  line-height: 1.6;
 }
 
-/* Header con logo a la izquierda y menú a la derecha */
+/* ===== HEADER ===== */
 header {
-  display: flex;                 /* organiza logo, título y menú en fila */
-  align-items: center;           /* centra verticalmente */
-  gap: 20px;                     /* espacio entre logo, título y menú */
-  padding: 20px 40px;            /* espacio alrededor del header */
-  background-color: #2e7d32;     /* verde principal */
-  color: white;
-}
-
-header .Logo {
-  width: 120px;                  /* ajusta tamaño a tu gusto */
-  height: auto;                  /* mantiene proporción */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background-color: #0b5d4b;
+  color: #fff;
 }
 
 header h1 {
-  font-size: 2rem;
-  margin: 0;
+  font-size: 1.8rem;
+  margin-left: 15px;
 }
 
-header nav {
-  margin-left: auto;             /* empuja el menú hacia la derecha */
-  display: flex;
-  gap: 20px;
+.Logo {
+  height: 60px;
 }
 
-header nav a {
-  color: white;
+/* ===== NAV ===== */
+nav a {
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-header nav a:hover,
-header nav a:focus {
-  text-decoration: underline;
-  outline: none;
+nav a:hover {
+  color: #b7e4c7;
 }
 
-/* Íconos del menú */
-nav a i {
-  color: white;
-  font-size: 18px;
+/* ===== MAIN ===== */
+main {
+  padding: 40px;
+  min-height: calc(100vh - 160px);
 }
 
-/* Secciones */
-main section {
-  padding: 60px 20px;
+/* ===== SECTIONS ===== */
+.section-page {
+  display: none;
+  max-width: 900px;
+  margin: auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-section h2 {
-  color: #2e7d32;
+.section-page.active {
+  display: block;
+}
+
+/* ===== TEXT ===== */
+h2 {
+  color: #0b5d4b;
+  margin-bottom: 20px;
+}
+
+p {
   margin-bottom: 15px;
 }
 
-/* Botón */
+/* ===== BUTTON ===== */
 button {
   padding: 12px 25px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #2e7d32;
-  color: white;
+  background-color: #0b5d4b;
+  color: #fff;
   border: none;
-  border-radius: 6px;
-  transition: background-color 0.3s, transform 0.1s;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #27632a;
+  background-color: #09493b;
 }
 
-button:active {
-  transform: translateY(1px);
+/* ===== LINKS ===== */
+a {
+  color: #0b5d4b;
 }
 
-/* Footer */
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
 footer {
-  background-color: #1b5e20;
-  color: white;
-  padding: 20px 0;
+  background-color: #e6e6e6;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
 
-footer img {
-  width: 80px;
-  height: auto;
+.EU-logo {
+  height: 50px;
   margin-bottom: 10px;
 }
 
-/* Responsivo: en pantallas pequeñas, el nav baja de línea */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   header {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     text-align: center;
   }
 
-  header nav {
-    margin-left: 0;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
+  nav {
+    margin-top: 10px;
   }
 
-  header .Logo {
-    width: 90px;
+  nav a {
+    margin: 10px;
+    display: inline-block;
   }
 
-  header h1 {
-    font-size: 1.6rem;
+  main {
+    padding: 20px;
   }
 }

@@ -4,14 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>EcoCemXplore</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- CSS mínimo para mostrar/ocultar secciones -->
+  <style>
+    .section-page {
+      display: none;
+    }
+
+    .section-page.active {
+      display: block;
+    }
+  </style>
 </head>
+
 <body>
+
+  <!-- ===== HEADER ===== -->
   <header>
-    <!-- Asegúrate de que la ruta exista exactamente así -->
-    <img src="Imagens/Logo.png" alt="Logo de EcoCemXplore" class="Logo"/>
+    <img src="Imagens/logo.png" alt="Logo de EcoCemXplore" class="Logo"/>
     <h1>EcoCemXplore</h1>
+
     <nav aria-label="Menú principal">
       <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
       <a href="#about-project">About Project</a>
@@ -21,47 +37,89 @@
     </nav>
   </header>
 
+  <!-- ===== MAIN CONTENT ===== -->
   <main>
-    <section id="home">
+
+    <!-- HOME -->
+    <section id="home" class="section-page active">
       <h2>Welcome to EcoCemXplore</h2>
       <p>Explore ecological solutions in the cement industry and learn how EcoCemXplore can help.</p>
+
+      <p>
+        EcoCemXplore focuses on sustainable cement production, reducing CO₂ emissions,
+        improving energy efficiency and supporting green innovation across Europe.
+      </p>
+
       <button id="btn">Discover More</button>
     </section>
 
-    <section id="about-project">
+    <!-- ABOUT PROJECT -->
+    <section id="about-project" class="section-page">
       <h2>About Project</h2>
-      <p>EcoCemXplore is a project focused on sustainable innovation, emission research and process optimization in the cement industry.</p>
+      <p>
+        EcoCemXplore is a project focused on sustainable innovation, emission research
+        and process optimization in the cement industry.
+      </p>
     </section>
 
-    <section id="participants">
+    <!-- PARTICIPANTS -->
+    <section id="participants" class="section-page">
       <h2>Participants</h2>
-      <p>Coming soon.</p>
+      <p>
+        This project brings together universities, research institutions and
+        industrial partners committed to sustainable cement solutions.
+      </p>
     </section>
 
-    <section id="news">
+    <!-- NEWS -->
+    <section id="news" class="section-page">
       <h2>News</h2>
-      <p>Latest updates about EcoCemXplore will appear here.</p>
+      <p>
+        Stay tuned for the latest news, publications and project milestones from EcoCemXplore.
+      </p>
     </section>
 
-    <section id="contact">
+    <!-- CONTACT -->
+    <section id="contact" class="section-page">
       <h2>Contact</h2>
       <p>
         You can send us an email to
-        <a href="mailto:smsp20@bath.ac.uk">smsp20@bath.ac.uk</a> or follow us on our social media.
+        <a href="mailto:smsp20@bath.ac.uk">smsp20@bath.ac.uk</a>
+        or follow us on our social media channels.
       </p>
     </section>
+
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
- <img src="Imagens/EU_logo.png" alt="Logo de la Unión Europea" class="EU-logo"/>
+    <img src="Imagens/EU_logo.png" alt="Logo de la Unión Europea" class="EU-logo"/>
     <p>© 2025 EcoCemXplore</p>
   </footer>
 
+  <!-- ===== SCRIPT ===== -->
   <script>
-    // Hace que el botón "Discover More" lleve a la sección About Project
+    const links = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('.section-page');
+
+    function showSection(id) {
+      sections.forEach(section => section.classList.remove('active'));
+      const target = document.querySelector(id);
+      if (target) target.classList.add('active');
+    }
+
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const sectionId = link.getAttribute('href');
+        showSection(sectionId);
+      });
+    });
+
     document.getElementById('btn')?.addEventListener('click', () => {
-      document.getElementById('about-project')?.scrollIntoView({ behavior: 'smooth' });
+      showSection('#about-project');
     });
   </script>
+
 </body>
 </html>
