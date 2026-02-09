@@ -57,3 +57,9 @@ footer {
     color: white;
     padding: 20px 0;
 }
+/* Espacio y color para los iconos del menú */
+nav a i {
+    margin-right: 5px; /* separa el ícono de la palabra */
+    color: white;       /* cambia el color del ícono si quieres */
+    font-size: 18px;    /* tamaño del ícono, ajusta si quieres */
+}
