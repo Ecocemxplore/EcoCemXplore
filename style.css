@@ -1,103 +1,120 @@
 /* Estilos generales */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f5f0;
-    color: #333;
-    text-align: center;
+html {
+  scroll-behavior: smooth;
 }
 
-/* Header */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f5f0;
+  color: #333;
+  text-align: center;
+}
+
+/* Header con logo a la izquierda y menú a la derecha */
 header {
-    background-color: #2e7d32;
-    color: white;
-    padding: 20px 0;
+  display: flex;                 /* organiza logo, título y menú en fila */
+  align-items: center;           /* centra verticalmente */
+  gap: 20px;                     /* espacio entre logo, título y menú */
+  padding: 20px 40px;            /* espacio alrededor del header */
+  background-color: #2e7d32;     /* verde principal */
+  color: white;
+}
+
+header .Logo {
+  width: 120px;                  /* ajusta tamaño a tu gusto */
+  height: auto;                  /* mantiene proporción */
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+header nav {
+  margin-left: auto;             /* empuja el menú hacia la derecha */
+  display: flex;
+  gap: 20px;
 }
 
 header nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
-header nav a:hover {
-    text-decoration: underline;
+header nav a:hover,
+header nav a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Íconos del menú */
+nav a i {
+  color: white;
+  font-size: 18px;
 }
 
 /* Secciones */
-section {
-    padding: 60px 20px;
+main section {
+  padding: 60px 20px;
 }
 
 section h2 {
-    color: #2e7d32;
-    margin-bottom: 15px;
+  color: #2e7d32;
+  margin-bottom: 15px;
 }
 
 /* Botón */
 button {
-    padding: 12px 25px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #2e7d32;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    transition: background-color 0.3s;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.1s;
 }
 
 button:hover {
-    background-color: #27632a;
+  background-color: #27632a;
+}
+
+button:active {
+  transform: translateY(1px);
 }
 
 /* Footer */
 footer {
-    background-color: #1b5e20;
-    color: white;
-    padding: 20px 0;
-}
-/* Espacio y color para los iconos del menú */
-nav a i {
-    margin-right: 5px; /* separa el ícono de la palabra */
-    color: white;       /* cambia el color del ícono si quieres */
-    font-size: 18px;    /* tamaño del ícono, ajusta si quieres */
-}
-/* Header con logo a la izquierda */
-header {
-    display: flex;           /* organiza logo, título y menú en fila */
-    align-items: center;     /* centra verticalmente */
-    justify-content: flex-start; /* alinea todo a la izquierda */
-    gap: 20px;               /* espacio entre logo, título y menú */
-    padding: 20px 40px;      /* espacio alrededor del header */
-    background-color: #2e7d32; /* mismo color que tu header actual */
-    color: white;
+  background-color: #1b5e20;
+  color: white;
+  padding: 20px 0;
 }
 
-/* Logo grande */
-header .Logo {
-    width: 120px;   /* ajusta tamaño a tu gusto */
-    height: auto;   /* mantiene proporción */
-}
+/* Responsivo: en pantallas pequeñas, el nav baja de línea */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
 
-/* Título alineado verticalmente */
-header h1 {
-    font-size: 2rem;
-    margin: 0;
-}
+  header nav {
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
 
-/* Menú al lado derecho del título */
-header nav {
-    margin-left: auto; /* empuja el menú hacia la derecha */
-}
+  header .Logo {
+    width: 90px;
+  }
 
-header nav a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav a:hover {
-    text-decoration: underline;
+  header h1 {
+    font-size: 1.6rem;
+  }
 }

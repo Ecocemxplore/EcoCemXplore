@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoCemXplore</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoCemXplore</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
-    <header>
-        <img src="Imagens/Logo.png" alt="Logo EcoCemXplore" class="Logo">
-        <h1>EcoCemXplore</h1>
-        <nav>
-          <a href="#home"><i class="fa-solid fa-house"></i> home</a>
-            <a href="#about-proyect">About Project</a>
-            <a href="#Participants">Participants</a>
-             <a href="#News">News</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <header>
+    <!-- Asegúrate de que la ruta exista exactamente así -->
+    <img src="Imagens/Logo.png" alt="Logo de EcoCemXplore" class="Logo"/>
+    <h1>EcoCemXplore</h1>
+    <nav aria-label="Menú principal">
+      <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#about-project">About Project</a>
+      <a href="#participants">Participants</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
+  <main>
     <section id="home">
-        <h2>Welcome to EcoCemXplore</h2>
-        <p>Explore ecological solutions in the cement industry and learn how EcoCemXplore can help.</p>
-        <button id="btn">Discover More</button>
+      <h2>Welcome to EcoCemXplore</h2>
+      <p>Explore ecological solutions in the cement industry and learn how EcoCemXplore can help.</p>
+      <button id="btn">Discover More</button>
     </section>
 
-    <section id="sobre-el-proyecto">
-        <h2>About Project</h2>
-        <p>EcoCemXplore is a project focused on sustainable innovation, emission research and process optimization in the cement industry.</p>
+    <section id="about-project">
+      <h2>About Project</h2>
+      <p>EcoCemXplore is a project focused on sustainable innovation, emission research and process optimization in the cement industry.</p>
     </section>
 
-    <section id="contacto">
-        <h2>Contact</h2>
-        <p>You can send us an email to <a href="mailto:smsp20@bath.as.uk.com">contacto@ecocemxplore.com</a> or follow us on our social media.</p>
+    <section id="participants">
+      <h2>Participants</h2>
+      <p>Coming soon.</p>
     </section>
 
-    <footer>
-        <p>© 2025 EcoCemXplore</p>
-    </footer>
+    <section id="news">
+      <h2>News</h2>
+      <p>Latest updates about EcoCemXplore will appear here.</p>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        You can send us an email to
+        <a href="mailto:smsp20@bath.ac.uk">smsp20@bath.ac.uk</a> or follow us on our social media.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 EcoCemXplore</p>
+  </footer>
+
+  <script>
+    // Hace que el botón "Discover More" lleve a la sección About Project
+    document.getElementById('btn')?.addEventListener('click', () => {
+      document.getElementById('about-project')?.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
