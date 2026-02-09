@@ -111,7 +111,7 @@ footer {
 
 .EU_logo {
   height: 50px;
-  margin-bottom: 10px;
+  border: 13px solid red;
 }
 
 /* ===== RESPONSIVE ===== */
