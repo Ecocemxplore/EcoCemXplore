@@ -74,8 +74,8 @@ header {
     color: white;
 }
 
-/* logo big */
-header .logo {
+/* Logo grande */
+header .Logo {
     width: 120px;   /* ajusta tamaño a tu gusto */
     height: auto;   /* mantiene proporción */
 }
