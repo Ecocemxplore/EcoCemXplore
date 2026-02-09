@@ -95,6 +95,12 @@ footer {
   padding: 20px 0;
 }
 
+footer img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
 /* Responsivo: en pantallas pequeñas, el nav baja de línea */
 @media (max-width: 768px) {
   header {
