@@ -63,3 +63,41 @@ nav a i {
     color: white;       /* cambia el color del ícono si quieres */
     font-size: 18px;    /* tamaño del ícono, ajusta si quieres */
 }
+/* Header con logo a la izquierda */
+header {
+    display: flex;           /* organiza logo, título y menú en fila */
+    align-items: center;     /* centra verticalmente */
+    justify-content: flex-start; /* alinea todo a la izquierda */
+    gap: 20px;               /* espacio entre logo, título y menú */
+    padding: 20px 40px;      /* espacio alrededor del header */
+    background-color: #2e7d32; /* mismo color que tu header actual */
+    color: white;
+}
+
+/* Logo grande */
+header .logo {
+    width: 120px;   /* ajusta tamaño a tu gusto */
+    height: auto;   /* mantiene proporción */
+}
+
+/* Título alineado verticalmente */
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Menú al lado derecho del título */
+header nav {
+    margin-left: auto; /* empuja el menú hacia la derecha */
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
