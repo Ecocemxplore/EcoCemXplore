@@ -27,62 +27,8 @@ main {
 }
 
 /* ================= HEADER ================= */
-header {
-  background: linear-gradient(135deg, #127d39, #127d39);
-  color: white;
-  padding: 1.2rem 2rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.logo {
-  height: 48px;
-}
-
-/* ================= H1 LINK ================= */
-header h1 a,
-header h1 a:link,
-header h1 a:visited,
-header h1 a:active {
-  color: white;           /* color del header */
-  text-decoration: none;  /* quitar subrayado */
-}
-
-header h1 a:hover {
-  color: #a0f0c0;         /* color claro opcional al pasar el mouse */
-  text-decoration: underline;
-}
 
 
-/* ================= NAV ================= */
-nav {
-  margin-left: auto;
-}
-
-nav a {
-  color: white;
-  margin-left: 1.2rem;
-  text-decoration: none;
-  font-weight: 500;
-  position: relative;
-}
-
-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background: white;
-  transition: width 0.3s ease;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
 nav a.active { text-decoration: underline; font-weight: 600; }
 
 /* ================= SECTIONS ================= */
@@ -132,10 +78,13 @@ button:hover {
 
 /* ================= FOOTER ================= */
 footer {
-  background: #7ea391;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #222;
   color: #ddd;
   padding: 2rem 1.5rem;
-  text-align: center;
   font-size: 0.9rem;
 }
 
