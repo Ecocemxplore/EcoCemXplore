@@ -1,0 +1,77 @@
+/* ---------------- General ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ---------------- Header ---------------- */
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #0a5c4a;
+  color: white;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------- Main / Sections ---------------- */
+main {
+  padding: 2rem;
+}
+
+.section-page {
+  display: none;
+}
+
+.section-page.active {
+  display: block;
+}
+
+/* ---------------- Button ---------------- */
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #0a5c4a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #08705a;
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+.eu_logo {
+  height: 40px;
+  margin-bottom: 1rem;
+}
