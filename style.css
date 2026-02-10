@@ -1,18 +1,16 @@
-/* Reset básico */
+/* ---------------- General ---------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* General */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #ffffff;
 }
 
-/* Header */
+/* ---------------- Header ---------------- */
 header {
   display: flex;
   align-items: center;
@@ -26,13 +24,8 @@ header {
   height: 50px;
 }
 
-nav {
-  margin-left: auto;
-  display: flex;
-  gap: 1rem;
-}
-
 nav a {
+  margin-left: 1rem;
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -42,14 +35,11 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Main */
+/* ---------------- Main / Sections ---------------- */
 main {
   padding: 2rem;
-  max-width: 1000px;
-  margin: auto;
 }
 
-/* Secciones */
 .section-page {
   display: none;
 }
@@ -58,7 +48,7 @@ main {
   display: block;
 }
 
-/* Botón */
+/* ---------------- Button ---------------- */
 button {
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
@@ -72,11 +62,12 @@ button:hover {
   background-color: #08705a;
 }
 
-/* Footer */
+/* ---------------- Footer ---------------- */
 footer {
   margin-top: 3rem;
   padding: 1.5rem;
-  background-color: #f4f4f4;
+  background-color: #333;
+  color: white;
   text-align: center;
 }
 
