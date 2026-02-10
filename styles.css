@@ -2,11 +2,11 @@
    VARIABLES Y RESET
 ===================== */
 :root {
-  --color-primary: #2a9d8f;    
+  --color-primary: #2a309db6;    
   --color-accent: #51e7cc;     
-  --color-bg: #59cb83;        
-  --color-text: #fff;
-  --color-light: #59cb83;
+  --color-bg: hsl(2, 52%, 57%);        
+  --color-text: hsla(0, 0%, 100%, 0.877);
+  --color-light: #7059cb;
   --transition: 0.3s;
   --max-width: 1200px;
 }
