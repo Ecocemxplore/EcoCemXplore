@@ -9,6 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  background-color: #ffffff;
 }
 
 /* Header */
@@ -25,8 +26,13 @@ header {
   height: 50px;
 }
 
+nav {
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+}
+
 nav a {
-  margin-left: 1rem;
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -39,6 +45,8 @@ nav a:hover {
 /* Main */
 main {
   padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
 /* Secciones */
@@ -75,8 +83,4 @@ footer {
 .eu_logo {
   height: 40px;
   margin-bottom: 1rem;
-}
-
-body {
-  background: yellow;
 }

@@ -7,10 +7,12 @@ navLinks.forEach(link => {
   link.addEventListener("click", () => {
     const target = link.getAttribute("data-section");
 
+    // Ocultar todas las secciones
     sections.forEach(section => {
       section.classList.remove("active");
     });
 
+    // Mostrar la sección seleccionada
     document.getElementById(target).classList.add("active");
   });
 });
