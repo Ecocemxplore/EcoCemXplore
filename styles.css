@@ -45,6 +45,16 @@ header h1 {
   font-size: 1.6rem;
   font-weight: 600;
 }
+/* ================= H1 LINK ================= */
+header h1 a {
+  color: white;           /* mismo color que el header */
+  text-decoration: none;  /* quitar subrayado */
+}
+
+header h1 a:hover {
+  color: #a0f0c0;         /* color claro opcional al pasar el mouse */
+  text-decoration: underline;
+}
 
 /* ================= NAV ================= */
 nav {
