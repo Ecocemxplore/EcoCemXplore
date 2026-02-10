@@ -17,44 +17,54 @@ if (navToggle && mainNav) {
   });
 }
 
-// ===== Link activo al hacer scroll =====
-const sections = document.querySelectorAll("section[id]");
-const links = document.querySelectorAll(".nav__link");
+// ===== SPA Router por hash =====
+const VALID_ROUTES = new Set(["about", "members", "news", "contact"]);
+const routesEls = document.querySelectorAll(".route");
+const navLinks  = document.querySelectorAll(".nav__link");
 
-const activateLink = () => {
-  let current = "";
-  sections.forEach(sec => {
-    const top = window.scrollY + 140; // offset por header
-    const start = sec.offsetTop;
-    const end = sec.offsetTop + sec.offsetHeight;
-    if (top >= start && top < end) current = sec.id;
+function setActiveRoute(route) {
+  // Mostrar/ocultar vistas
+  routesEls.forEach(sec => {
+    const isActive = sec.dataset.route === route;
+    sec.classList.toggle("active", isActive);
+    sec.hidden = !isActive;
   });
 
-  links.forEach(link => {
-    const sec = link.getAttribute("href")?.slice(1);
-    link.classList.toggle("active", sec === current);
+  // Marcar enlace activo y aria-current
+  navLinks.forEach(link => {
+    const r = link.getAttribute("href")?.replace("#/", "");
+    const isActive = r === route;
+    link.classList.toggle("active", isActive);
+    if (isActive) link.setAttribute("aria-current", "page");
+    else link.removeAttribute("aria-current");
   });
-};
-window.addEventListener("scroll", activateLink);
-window.addEventListener("load", activateLink);
 
-// ===== Scroll suave extra (para navegadores sin soporte nativo) =====
-links.forEach(link => {
-  link.addEventListener("click", (e) => {
-    const hash = link.getAttribute("href");
-    if (hash?.startsWith("#")) {
-      e.preventDefault();
-      const target = document.querySelector(hash);
-      if (!target) return;
+  // Título del documento
+  const titleCase = route.charAt(0).toUpperCase() + route.slice(1);
+  document.title = `EcoCemXplore – ${titleCase}`;
+}
 
-      const prefersReduced = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
-      window.scrollTo({
-        top: target.offsetTop - 80,
-        behavior: prefersReduced ? "auto" : "smooth"
-      });
-      history.pushState(null, "", hash);
-    }
-  });
+function getRouteFromHash() {
+  const hash = window.location.hash || "#/about";
+  const route = hash.replace("#/", "").toLowerCase();
+  return VALID_ROUTES.has(route) ? route : "about";
+}
+
+function handleRouteChange() {
+  const route = getRouteFromHash();
+  setActiveRoute(route);
+
+  // Enfocar el encabezado de la vista para accesibilidad
+  const header = document.querySelector(`.route[data-route="${route}"] .route__title`);
+  header?.setAttribute("tabindex", "-1");
+  header?.focus({ preventScroll: true });
+}
+
+window.addEventListener("hashchange", handleRouteChange);
+window.addEventListener("DOMContentLoaded", () => {
+  // Estado inicial
+  if (!window.location.hash) window.location.hash = "#/about";
+  handleRouteChange();
 });
 
 // ===== Validación simple del formulario =====
@@ -62,7 +72,7 @@ const form = document.getElementById("contact-form");
 const statusEl = document.getElementById("form-status");
 
 function setError(inputEl, msg){
-  const p = inputEl.parentElement.querySelector(".field__error");
+  const p = inputEl?.parentElement?.querySelector(".field__error");
   if (p) p.textContent = msg || "";
 }
 
