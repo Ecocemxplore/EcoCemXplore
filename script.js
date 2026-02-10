@@ -1,23 +1,29 @@
- <!-- ===== SCRIPT ===== -->
-  <script>
-    const links = document.querySelectorAll('nav a');
-    const sections = document.querySelectorAll('.section-page');
+// Seleccionamos enlaces del menú y secciones
+const navLinks = document.querySelectorAll("nav a");
+const sections = document.querySelectorAll(".section-page");
 
-    function showSection(id) {
-      sections.forEach(section => section.classList.remove('active'));
-      const target = document.querySelector(id);
-      if (target) target.classList.add('active');
-    }
+// Navegación por menú
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    const target = link.getAttribute("data-section");
 
-    links.forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const sectionId = link.getAttribute('href');
-        showSection(sectionId);
-      });
+    sections.forEach(section => {
+      section.classList.remove("active");
     });
 
-    document.getElementById('btn')?.addEventListener('click', () => {
-      showSection('#about-project');
+    document.getElementById(target).classList.add("active");
+  });
+});
+
+// Botón "Discover More"
+const discoverBtn = document.getElementById("btn");
+
+if (discoverBtn) {
+  discoverBtn.addEventListener("click", () => {
+    sections.forEach(section => {
+      section.classList.remove("active");
     });
-  </script>
+
+    document.getElementById("about-project").classList.add("active");
+  });
+}

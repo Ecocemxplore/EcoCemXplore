@@ -2,58 +2,43 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EcoCemXplore</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
-  <!-- CSS mínimo para mostrar/ocultar secciones -->
-  <style>
-    .section-page {
-      display: none;
-    }
-
-    .section-page.active {
-      display: block;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
 
   <!-- ===== HEADER ===== -->
   <header>
-    <img src="Imagens/logo.png" alt="EcoCemXplore logo" class="logo"/>
+    <img src="Imagens/logo.png" alt="EcoCemXplore logo" class="logo" />
     <h1>EcoCemXplore</h1>
 
     <nav aria-label="Menú principal">
-      <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
-      <a href="#about-project">About Project</a>
-      <a href="#participants">Participants</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
+      <a data-section="home"><i class="fa-solid fa-house"></i> Home</a>
+      <a data-section="about-project">About Project</a>
+      <a data-section="participants">Participants</a>
+      <a data-section="news">News</a>
+      <a data-section="contact">Contact</a>
     </nav>
   </header>
 
-  <!-- ===== MAIN CONTENT ===== -->
+  <!-- ===== MAIN ===== -->
   <main>
 
-    <!-- HOME -->
     <section id="home" class="section-page active">
       <h2>Welcome to EcoCemXplore</h2>
       <p>Explore ecological solutions in the cement industry and learn how EcoCemXplore can help.</p>
-
       <p>
         EcoCemXplore focuses on sustainable cement production, reducing CO₂ emissions,
         improving energy efficiency and supporting green innovation across Europe.
       </p>
-
       <button id="btn">Discover More</button>
     </section>
 
-    <!-- ABOUT PROJECT -->
     <section id="about-project" class="section-page">
       <h2>About Project</h2>
       <p>
@@ -62,24 +47,19 @@
       </p>
     </section>
 
-    <!-- PARTICIPANTS -->
     <section id="participants" class="section-page">
       <h2>Participants</h2>
       <p>
         This project brings together universities, research institutions and
         industrial partners committed to sustainable cement solutions.
       </p>
-      <p>
-        1. Meet our team of experts and discover how we are working together to
-        drive change in the cement industry.
-        </p>
-        2. Learn about our partners and their contributions to the project.
-        </p>
-        3. Explore the collaborative efforts that are making EcoCemXplore a success.
-      </p>
+      <ol>
+        <li>Meet our team of experts and discover how we are working together.</li>
+        <li>Learn about our partners and their contributions.</li>
+        <li>Explore the collaborative efforts behind EcoCemXplore.</li>
+      </ol>
     </section>
 
-    <!-- NEWS -->
     <section id="news" class="section-page">
       <h2>News</h2>
       <p>
@@ -87,13 +67,11 @@
       </p>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="section-page">
       <h2>Contact</h2>
       <p>
-        You can send us an email to
+        Email us at
         <a href="mailto:smsp20@bath.ac.uk">smsp20@bath.ac.uk</a>
-        or follow us on our social media channels.
       </p>
     </section>
 
@@ -101,10 +79,15 @@
 
   <!-- ===== FOOTER ===== -->
   <footer>
-    <img src="Imagens/eu_logo.png" alt="European Union" class="eu_logo"/>
-    <p>This project has been founded from European Union Horizon research and innovation programme under Marie Slodowska-Curie Actions grant agreement No 101206047.</p>
+    <img src="Imagens/eu_logo.png" alt="European Union" class="eu_logo" />
+    <p>
+      This project has been funded by the European Union Horizon research and innovation programme
+      under Marie Skłodowska-Curie Actions grant agreement No 101206047.
+    </p>
     <p>© 2025 EcoCemXplore</p>
   </footer>
 
- </body>
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
 </html>
