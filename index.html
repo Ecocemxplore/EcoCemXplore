@@ -72,7 +72,9 @@
       <p>
         1. Meet our team of experts and discover how we are working together to
         drive change in the cement industry.
+        </p>
         2. Learn about our partners and their contributions to the project.
+        </p>
         3. Explore the collaborative efforts that are making EcoCemXplore a success.
       </p>
     </section>
@@ -99,34 +101,10 @@
 
   <!-- ===== FOOTER ===== -->
   <footer>
-    <img src="Imagens/EU_logo.png" alt="European Union" class="EU_logo"/>
+    <img src="Imagens/eu_logo.png" alt="European Union" class="eu_logo"/>
     <p>This project has been founded from European Union Horizon research and innovation programme under Marie Slodowska-Curie Actions grant agreement No 101206047.</p>
     <p>© 2025 EcoCemXplore</p>
   </footer>
 
-  <!-- ===== SCRIPT ===== -->
-  <script>
-    const links = document.querySelectorAll('nav a');
-    const sections = document.querySelectorAll('.section-page');
-
-    function showSection(id) {
-      sections.forEach(section => section.classList.remove('active'));
-      const target = document.querySelector(id);
-      if (target) target.classList.add('active');
-    }
-
-    links.forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const sectionId = link.getAttribute('href');
-        showSection(sectionId);
-      });
-    });
-
-    document.getElementById('btn')?.addEventListener('click', () => {
-      showSection('#about-project');
-    });
-  </script>
-
-</body>
+ </body>
 </html>

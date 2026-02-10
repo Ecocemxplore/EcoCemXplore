@@ -1,34 +1,23 @@
-// Selecciona todos los enlaces del menú
-const navLinks = document.querySelectorAll('nav a');
+ <!-- ===== SCRIPT ===== -->
+  <script>
+    const links = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('.section-page');
 
-// Selecciona todas las secciones principales
-const sections = document.querySelectorAll('.section-page');
+    function showSection(id) {
+      sections.forEach(section => section.classList.remove('active'));
+      const target = document.querySelector(id);
+      if (target) target.classList.add('active');
+    }
 
-// Función que muestra solo la sección seleccionada
-function showSection(sectionId) {
-  sections.forEach(section => {
-    section.classList.remove('active');
-  });
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const sectionId = link.getAttribute('href');
+        showSection(sectionId);
+      });
+    });
 
-  const targetSection = document.querySelector(sectionId);
-  if (targetSection) {
-    targetSection.classList.add('active');
-  }
-}
-
-// Click en los enlaces del menú
-navLinks.forEach(link => {
-  link.addEventListener('click', event => {
-    event.preventDefault(); // evita el salto de ancla
-    const sectionId = link.getAttribute('href');
-    showSection(sectionId);
-  });
-});
-
-// Botón "Discover More"
-const discoverBtn = document.getElementById('btn');
-if (discoverBtn) {
-  discoverBtn.addEventListener('click', () => {
-    showSection('#about-project');
-  });
-}
+    document.getElementById('btn')?.addEventListener('click', () => {
+      showSection('#about-project');
+    });
+  </script>
