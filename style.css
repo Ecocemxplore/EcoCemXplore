@@ -108,7 +108,12 @@ footer {
   padding: 20px;
   margin-top: 40px;
 }
-
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 .EU_logo {
   height: 50px;
   margin-bottom: 55px;
