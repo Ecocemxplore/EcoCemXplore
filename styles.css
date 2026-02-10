@@ -180,6 +180,7 @@ img{ max-width:100%; display:block; }
   background: #F3F8FF;
   color: var(--ink);
   padding: 1.2rem 0;
+}
 .footer__inner{
   display:flex;
   justify-content:center;
@@ -187,7 +188,15 @@ img{ max-width:100%; display:block; }
   text-align:center;
   flex-direction: column;
 }
-.eu_logo{ height: 32px; width:auto; }
+.eu_logo{ 
+  display: block;
+  max-width: 100%;
+  height:auto;
+  margin:2rem auto;
+  border-radius: 12px;
+   }
 
 /* ===== Helpers ===== */
-.hidden{ display:none !important; }
+.hidden{ 
+  display:none !important;
+ }
