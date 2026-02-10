@@ -1,4 +1,4 @@
-/* RESET BASE */
+/* ===== RESET BASE ===== */
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +6,12 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #f0f4f8, #ffffff);
+  font-family: 'Inter', 'Poppins', sans-serif;
+  background: linear-gradient(145deg, #F5F5DC, #FFFFFFF0);
   color: #333;
   min-height: 100vh;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 /* ===== HEADER ===== */
@@ -19,26 +20,32 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 2px solid #e0f2f1;
-  transition: background-color 0.3s, box-shadow 0.3s;
+  border-bottom: 1px solid #D0E8D0;
+  transition: all 0.4s ease;
 }
 
 header:hover {
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.12);
 }
 
 header .logo {
   height: 50px;
+  transition: transform 0.3s;
+}
+
+header .logo:hover {
+  transform: scale(1.05);
 }
 
 header h1 a {
-  font-size: 1.7rem;
-  color: #2a7f62;
+  font-size: 1.8rem;
+  color: #4CAF50;
   font-weight: 700;
   text-decoration: none;
 }
@@ -51,14 +58,15 @@ nav a {
   align-items: center;
   gap: 0.4rem;
   cursor: pointer;
-  padding: 0.3rem 0.6rem;
-  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
   transition: all 0.3s;
 }
 
 nav a:hover {
-  color: #ffffff;
-  background-color: #2a7f62;
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #4CAF50, #A5D6A7);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* ===== SECCIONES ===== */
@@ -68,11 +76,11 @@ nav a:hover {
   max-width: 1000px;
   margin: 3rem auto;
   min-height: calc(100vh - 120px);
-  background-color: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-  animation: fadeIn 0.5s ease-in;
-  transition: transform 0.3s;
+  background-color: #FFFFFFF0;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+  animation: fadeUp 0.6s ease-in-out;
+  transition: transform 0.4s, box-shadow 0.4s;
 }
 
 .section-page.active {
@@ -81,45 +89,48 @@ nav a:hover {
 }
 
 .section-page:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
 }
 
 .section-page h2 {
-  color: #2a7f62;
+  color: #4CAF50;
   margin-bottom: 1.5rem;
-  font-size: 2.2rem;
-  font-weight: 700;
-  border-left: 5px solid #2a7f62;
-  padding-left: 0.8rem;
+  font-size: 2.4rem;
+  font-weight: 800;
+  border-left: 6px solid #A5D6A7;
+  padding-left: 1rem;
 }
 
 .section-page p,
 .section-page ol {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   color: #555;
-  font-size: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
 }
 
-/* Lista con estilo */
 .section-page ol {
-  padding-left: 1.5rem;
+  padding-left: 2rem;
 }
 
 .section-page ol li {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
   position: relative;
+  padding-left: 0.5rem;
 }
 
 .section-page ol li::marker {
-  color: #2a7f62;
+  color: #4CAF50;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 /* ===== FORMULARIO DE CONTACTO ===== */
 .contact {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: flex-start;
 }
 
@@ -129,22 +140,24 @@ nav a:hover {
 
 .contact__eyebrow {
   text-transform: uppercase;
-  color: #2a7f62;
+  color: #4CAF50;
   font-weight: 600;
   letter-spacing: 1px;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .contact__title {
-  font-size: 2rem;
-  color: #2a7f62;
+  font-size: 2.2rem;
+  color: #4CAF50;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .contact__subtitle {
   color: #555;
-  margin-bottom: 2rem;
-  line-height: 1.5;
+  margin-bottom: 2.2rem;
+  line-height: 1.6;
 }
 
 .contact__form .contact__row {
@@ -156,7 +169,7 @@ nav a:hover {
 .field {
   position: relative;
   flex: 1 1 200px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
 .field label {
@@ -169,56 +182,56 @@ nav a:hover {
 .field input,
 .field textarea {
   width: 100%;
-  padding: 0.7rem 0.8rem;
+  padding: 0.8rem 1rem;
   border: 2px solid #ddd;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 1rem;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
 }
 
 .field input:focus,
 .field textarea:focus {
-  border-color: #2a7f62;
-  box-shadow: 0 0 10px rgba(42,127,98,0.15);
+  border-color: #A5D6A7;
+  box-shadow: 0 0 12px rgba(165,214,167,0.2);
   outline: none;
+  transform: scale(1.02);
 }
 
 .field__error {
   font-size: 0.85rem;
-  color: #d9534f;
+  color: #e53935;
   margin-top: 0.2rem;
 }
 
 button, .btn {
-  background-color: #2a7f62;
+  background: linear-gradient(135deg, #4CAF50, #A5D6A7);
   color: #fff;
   border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
+  padding: 0.7rem 1.4rem;
+  border-radius: 12px;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s;
 }
 
 button:hover, .btn:hover {
-  background-color: #1e5e4b;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
 
-/* ===== ANIMACIÓN FADE ===== */
-@keyframes fadeIn {
-  from {opacity: 0; transform: translateY(20px);}
+/* ===== ANIMACIONES ===== */
+@keyframes fadeUp {
+  from {opacity: 0; transform: translateY(30px);}
   to {opacity: 1; transform: translateY(0);}
 }
 
 /* ===== FOOTER ===== */
 footer {
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #FFFFFFF0;
   color: #555;
-  border-top: 1px solid #e0f2f1;
+  border-top: 1px solid #D0E8D0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -228,6 +241,11 @@ footer {
 footer .eu_logo {
   height: 50px;
   object-fit: contain;
+  transition: transform 0.3s;
+}
+
+footer .eu_logo:hover {
+  transform: scale(1.05);
 }
 
 footer p {
@@ -235,7 +253,7 @@ footer p {
 }
 
 footer a {
-  color: #2a7f62;
+  color: #4CAF50;
   text-decoration: none;
   font-weight: 500;
 }
