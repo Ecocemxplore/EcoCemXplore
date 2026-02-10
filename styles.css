@@ -180,9 +180,12 @@ img{ max-width:100%; display:block; }
   background: #F3F8FF;
   color: var(--ink);
   padding: 1.2rem 0;
-}
 .footer__inner{
-  display:flex; gap:1rem; align-items:center; justify-content: space-between; flex-wrap: wrap;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  flex-direction: column;
 }
 .eu_logo{ height: 32px; width:auto; }
 
