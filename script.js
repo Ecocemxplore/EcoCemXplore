@@ -1,17 +1,19 @@
 // Seleccionamos la imagen
 const img = document.querySelector("img");
 
-// Al hacer clic en la imagen, cambia a otra
-img.addEventListener("click", () => {
-  img.src = "https://picsum.photos/300?random=" + Math.floor(Math.random() * 1000);
-});
-
-// Al pasar el mouse, mostramos un mensaje en la consola
+// Efecto al pasar el cursor: aumenta un poco el tamaño
 img.addEventListener("mouseover", () => {
-  console.log("¡Hola! Estás pasando el cursor sobre la imagen.");
+  img.style.transform = "scale(1.05)";
+  img.style.transition = "transform 0.3s"; // animación suave
 });
 
-// Al salir el cursor, vuelve a la imagen original
+// Efecto al quitar el cursor: vuelve al tamaño original
 img.addEventListener("mouseout", () => {
-  img.src = "https://placehold.co/300";
+  img.style.transform = "scale(1)";
+});
+
+// Efecto al hacer clic: por ejemplo, cambiar borde y sombra
+img.addEventListener("click", () => {
+  img.style.border = "3px solid #007BFF";
+  img.style.boxShadow = "0 6px 12px rgba(0,0,0,0.4)";
 });
