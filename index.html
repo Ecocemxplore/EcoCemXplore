@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Imagen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCemXplore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- Iconos de FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-left">
+            <img src="imagen.png" alt="Logo EcoCemXplore" class="logo">
+            <h1 id="title">EcoCemXplore</h1>
+        </div>
+        <nav>
+            <ul class="nav-icons">
+                <li data-page="about"><i class="fas fa-info-circle"></i> About Project</li>
+                <li data-page="team"><i class="fas fa-users"></i> Team</li>
+                <li data-page="news"><i class="fas fa-newspaper"></i> News</li>
+                <li data-page="contacts"><i class="fas fa-envelope"></i> Contacts</li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Imagen en la página -->
-  <img src="imagen.png" alt="Mi imagen">
+    <!-- BODY -->
+    <main id="content">
+        <!-- Contenido dinámico aparecerá aquí -->
+        <section id="about" class="page-section">
+            <h2>About EcoCemXplore</h2>
+            <p>EcoCemXplore es un proyecto Marie Curie dedicado a la investigación ecofriendly en materiales de construcción innovadores...</p>
+        </section>
+    </main>
 
+    <!-- FOOTER -->
+    <footer>
+        <img src="UoB_logo.png" alt="Universidad">
+        <img src="eu_logo.png" alt="Unión Europea">
+        <p>Este proyecto es financiado por la Unión Europea.</p>
+    </footer>
 </body>
 </html>
