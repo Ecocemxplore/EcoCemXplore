@@ -1,18 +1,20 @@
-const buttons = document.querySelectorAll(".tab-btn");
-const contents = document.querySelectorAll(".tab-content");
+// Sistema de Tabs
+const buttons = document.querySelectorAll("#tabs button");
+const sections = document.querySelectorAll(".tab-section");
 
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
 
-        // Remove active class from all buttons
-        buttons.forEach(btn => btn.classList.remove("active"));
-        button.classList.add("active");
+    // Quitar activo
+    buttons.forEach(b => b.classList.remove("active"));
+    sections.forEach(s => s.classList.remove("active"));
 
-        // Hide all content
-        contents.forEach(content => content.classList.remove("active"));
+    // Activar botón
+    btn.classList.add("active");
 
-        // Show selected tab
-        const target = button.getAttribute("data-tab");
-        document.getElementById(target).classList.add("active");
-    });
+    // Activar sección correspondiente
+    const tabId = btn.getAttribute("data-tab");
+    document.getElementById(tabId).classList.add("active");
+
+  });
 });

@@ -1,80 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>EcoCemXplore | MSCA Project</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoCemXplore</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-<header>
-    <div class="logo">EcoCemXplore</div>
-    <nav>
-        <ul>
-            <li><button class="tab-btn active" data-tab="about">About Project</button></li>
-            <li><button class="tab-btn" data-tab="team">Team</button></li>
-            <li><button class="tab-btn" data-tab="news">News</button></li>
-            <li><button class="tab-btn" data-tab="contact">Contact</button></li>
-        </ul>
+<header class="navbar">
+  <div class="nav-inner">
+    <div class="brand">EcoCem<span class="accent">Xplore</span></div>
+    <nav class="menu" id="tabs">
+      <button data-tab="home" class="active">Home</button>
+      <button data-tab="about">About</button>
+      <button data-tab="members">Members</button>
+      <button data-tab="research">Research</button>
+      <button data-tab="contact">Contact</button>
     </nav>
+  </div>
 </header>
 
+<!-- 🎯 Secciones tipo TABS -->
 <main>
-    <!-- ABOUT -->
-    <section id="about" class="tab-content active">
-        <h2>About EcoCemXplore</h2>
-        <p>
-            EcoCemXplore is a Marie Skłodowska-Curie Postdoctoral Fellowship project 
-            focused on developing next-generation low-carbon cementitious materials.
-        </p>
-        <p>
-            The project aims to reduce CO₂ emissions in the construction sector 
-            through innovative material design and advanced characterization.
-        </p>
-    </section>
 
-    <!-- TEAM -->
-    <section id="team" class="tab-content">
-        <h2>Project Team</h2>
-        <div class="card">
-            <h3>Your Name</h3>
-            <p>MSCA Postdoctoral Fellow</p>
-            <p>Host Institution</p>
-        </div>
+  <section id="home" class="tab-section active">
+    <h1>EcoCemXplore</h1>
+    <p>Exploring Eco‑Cement Materials & Sustainable Construction</p>
+  </section>
 
-        <div class="card">
-            <h3>Supervisor Name</h3>
-            <p>Project Supervisor</p>
-            <p>Department / Institution</p>
-        </div>
-    </section>
+  <section id="about" class="tab-section">
+    <h2>About</h2>
+    <p>EcoCemXplore investiga materiales cementicios eco‑eficientes y soluciones de baja energía.</p>
+  </section>
 
-    <!-- NEWS -->
-    <section id="news" class="tab-content">
-        <h2>Latest News</h2>
-        <div class="card">
-            <h3>Project Kick-off</h3>
-            <p>January 2026</p>
-            <p>The EcoCemXplore project officially started under MSCA.</p>
-        </div>
-    </section>
+  <section id="members" class="tab-section">
+    <h2>Members</h2>
+    <p>Aquí irán tus perfiles del equipo.</p>
+  </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="tab-content">
-        <h2>Contact</h2>
-        <p>Email: your.email@institution.eu</p>
-        <p>Host Institution Address</p>
-    </section>
+  <section id="research" class="tab-section">
+    <h2>Research Activities</h2>
+    <p>Define aquí tus líneas de investigación: eco‑cementos, LC3, activación alcalina, etc.</p>
+  </section>
+
+  <section id="contact" class="tab-section">
+    <h2>Contact</h2>
+    <p>Email: info@ecocemxplore.org</p>
+  </section>
+
 </main>
 
-<footer>
-    <p>
-        Funded by the European Union under the Marie Skłodowska-Curie Actions (MSCA).
-    </p>
-</footer>
-
 <script src="script.js"></script>
-
 </body>
 </html>
+``
