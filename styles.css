@@ -16,7 +16,10 @@ body{
   background:#90bc9a;
   box-shadow:0 2px 5px rgba(0,0,0,0.3);
 }
+.brand{
+font-size:2rem;
 
+}
 .nav-inner{
   width:90%;
   margin:auto;
@@ -39,9 +42,9 @@ body{
   border:0;
   color:#fff;
   margin:0 10px;
-  font-size:1rem;
+  font-size:1.2rem;
   cursor:pointer;
-  padding:6px 10px;
+  padding:10px 15px;
 }
 
 .menu button.active{
@@ -51,7 +54,7 @@ body{
 main{
   flex: 1;
   padding: 20px;
-  padding-top: 80px;
+  padding-top: 100px;
   flex: 1; /* hace que main ocupe el espacio restante empujando el footer hacia abajo */
   padding: 20px;
 }
@@ -90,4 +93,4 @@ main{
   text-decoration: underline;
 }
 /*scroll padding para hacer fijo*/
-html { scroll-padding-top: 80px; /* esto asegura que el contenido no quede oculto debajo del header fijo */ }
+html { scroll-padding-top: 100px; /* esto asegura que el contenido no quede oculto debajo del header fijo */ }
