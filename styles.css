@@ -92,5 +92,13 @@ main{
 .footer a:hover {
   text-decoration: underline;
 }
+
+.footer-logo { 
+ width: 80px; 
+ height: auto; 
+ display: block;
+ margin: 0 auto 10px auto;
+}
+ 
 /*scroll padding para hacer fijo*/
 html { scroll-padding-top: 100px; /* esto asegura que el contenido no quede oculto debajo del header fijo */ }
