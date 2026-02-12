@@ -14,8 +14,9 @@ body {
   position:fixed;
   top:0;
   width:100%;
+  z-index: 1000;
   background:#90bc9a;
-  padding:12px 0;
+  box-shadow:0 2px 5px rgba(0,0,0,0.3);
 }
 
 .nav-inner{
@@ -50,7 +51,9 @@ body {
 }
 
 main{
-  padding-top:100px;
+  flex: 1;
+  padding: 20px;
+  padding-top: 80px;
 }
 main {
   flex: 1; /* hace que main ocupe el espacio restante empujando el footer hacia abajo */
