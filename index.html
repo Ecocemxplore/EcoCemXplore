@@ -1,44 +1,80 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>EcoCemXplore | MSCA Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoCemXplore</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <!-- Iconos de FontAwesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="header-left">
-            <img src="imagen.png" alt="Logo EcoCemXplore" class="logo">
-            <h1 id="title">EcoCemXplore</h1>
+
+<header>
+    <div class="logo">EcoCemXplore</div>
+    <nav>
+        <ul>
+            <li><button class="tab-btn active" data-tab="about">About Project</button></li>
+            <li><button class="tab-btn" data-tab="team">Team</button></li>
+            <li><button class="tab-btn" data-tab="news">News</button></li>
+            <li><button class="tab-btn" data-tab="contact">Contact</button></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- ABOUT -->
+    <section id="about" class="tab-content active">
+        <h2>About EcoCemXplore</h2>
+        <p>
+            EcoCemXplore is a Marie Skłodowska-Curie Postdoctoral Fellowship project 
+            focused on developing next-generation low-carbon cementitious materials.
+        </p>
+        <p>
+            The project aims to reduce CO₂ emissions in the construction sector 
+            through innovative material design and advanced characterization.
+        </p>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="tab-content">
+        <h2>Project Team</h2>
+        <div class="card">
+            <h3>Your Name</h3>
+            <p>MSCA Postdoctoral Fellow</p>
+            <p>Host Institution</p>
         </div>
-        <nav>
-            <ul class="nav-icons">
-                <li data-page="about"><i class="fas fa-info-circle"></i> About Project</li>
-                <li data-page="team"><i class="fas fa-users"></i> Team</li>
-                <li data-page="news"><i class="fas fa-newspaper"></i> News</li>
-                <li data-page="contacts"><i class="fas fa-envelope"></i> Contacts</li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- BODY -->
-    <main id="content">
-        <!-- Contenido dinámico aparecerá aquí -->
-        <section id="about" class="page-section">
-            <h2>About EcoCemXplore</h2>
-            <p>EcoCemXplore es un proyecto Marie Curie dedicado a la investigación ecofriendly en materiales de construcción innovadores...</p>
-        </section>
-    </main>
+        <div class="card">
+            <h3>Supervisor Name</h3>
+            <p>Project Supervisor</p>
+            <p>Department / Institution</p>
+        </div>
+    </section>
 
-    <!-- FOOTER -->
-    <footer>
-                <img src="eu_logo.png" alt="Unión Europea">
-        <p>Este proyecto es financiado por la Unión Europea.</p>
-    </footer>
+    <!-- NEWS -->
+    <section id="news" class="tab-content">
+        <h2>Latest News</h2>
+        <div class="card">
+            <h3>Project Kick-off</h3>
+            <p>January 2026</p>
+            <p>The EcoCemXplore project officially started under MSCA.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="tab-content">
+        <h2>Contact</h2>
+        <p>Email: your.email@institution.eu</p>
+        <p>Host Institution Address</p>
+    </section>
+</main>
+
+<footer>
+    <p>
+        Funded by the European Union under the Marie Skłodowska-Curie Actions (MSCA).
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
