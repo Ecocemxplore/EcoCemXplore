@@ -61,7 +61,7 @@ font-size:2rem;
 main{
   flex: 1;
   padding: 20px;
-  padding-top: 100px;
+  padding-top: 80px;
   flex: 1; /* hace que main ocupe el espacio restante empujando el footer hacia abajo */
   padding: 20px;
 }
