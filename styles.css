@@ -4,7 +4,12 @@ body{
   background:#94a8bc;
   color:#fff;
 }
-
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* esto asegura que el body ocupe toda la pantalla */
+  margin: 0; /* elimina márgenes por defecto del navegador */
+}
 .navbar{
   position:fixed;
   top:0;
@@ -47,7 +52,10 @@ body{
 main{
   padding-top:100px;
 }
-
+main {
+  flex: 1; /* hace que main ocupe el espacio restante empujando el footer hacia abajo */
+  padding: 20px;
+}
 .tab-section{
   display:none;
   width:80%;
