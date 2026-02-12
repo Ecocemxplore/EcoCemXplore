@@ -17,6 +17,12 @@ body{
   background:#90bc9a;
   box-shadow:0 2px 5px rgba(0,0,0,0.3);
 }
+.header-logo { 
+ width: 1px; 
+ height: 1px; 
+margin-right: 10px; 
+}
+
 .brand{
 font-size:2rem;
 
@@ -98,9 +104,9 @@ justify-content: center;
 }
 
 .footer-logo { 
- width: 5px; 
- height: 5px; 
- margin-bottom: 5px;
+ width: 1%; 
+ height: 10px; 
+ margin-bottom: 1px;
 }
  
 /*scroll padding para hacer fijo*/
