@@ -83,10 +83,10 @@ main{
 }
 /*footer*/
 .footer {
-  background-color: red;
+  background-color: #222;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 .footer a {
@@ -100,9 +100,9 @@ main{
 }
 
 .footer-logo { 
- width: 40px; 
+ width: 20px; 
  height: auto; 
- margin-bottom: 5px;
+ margin-bottom: 0;
 }
  
 /*scroll padding para hacer fijo*/
