@@ -82,7 +82,31 @@ main{
   color: #fff;
   text-align: center;
 }
+/* Secciones dentro del hero */
+.home-section {
+  margin: 60px 0;        /* separación entre secciones */
+  padding: 40px 20px;    /* relleno interno */
+  background: rgba(0,0,0,0.2); /* opcional: fondo semitransparente */
+  border-radius: 10px;   /* opcional: bordes redondeados */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  text-align: center;
+}
+.home-section img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
 
+.home-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.home-section p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
 .hero-section h1 {
   font-size: 3rem;
   margin-bottom: 20px;
