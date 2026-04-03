@@ -1,127 +1,128 @@
-body{
-  margin:0;
-  font-family:Arial, Helvetica, sans-serif;
-  background:#94a8bc;
-  color:#fff;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #94a8bc;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* esto asegura que el body ocupe toda la pantalla */
+  min-height: 100vh; /* main ocupa el espacio restante */
 }
-/*Header*/
-.navbar{
-  position:sticky;
-  top:0;
-  width:100%;
+
+/* Header */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
   height: fit-content;
   z-index: 1000;
-  background:#90bc9a;
-  box-shadow:0 2px 5px rgba(0,0,0,0.3);
+  background: #90bc9a;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
+
 .header-logo { 
- width: auto; 
- height: 80px; 
- cursor: pointer;
-margin: auto 0; 
-}
-.nav-inner{
-  width:90%;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+  width: auto; 
+  height: 80px; 
+  cursor: pointer;
+  margin: auto 0; 
 }
 
-.brand{
-  font-size:1.4rem;
-  font-weight:bold;
+.nav-inner {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.accent{
-  color:#00e18e;
+.brand {
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
-.menu button{
-  background:none;
-  border:0;
-  color:#fff;
-  margin:0 10px;
-  font-size:1.2rem;
-  cursor:pointer;
-  padding:10px 15px;
+.accent {
+  color: #00e18e;
 }
 
-.menu button.active{
-  border-bottom:2px solid #00e18e;
+.menu button {
+  background: none;
+  border: 0;
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 10px 15px;
 }
-/*Main*/
-main{
+
+.menu button.active {
+  border-bottom: 2px solid #00e18e;
+}
+
+/* Main */
+main {
   flex: 1;
-  padding: 20px;
-  padding-top: 80px;
-  flex: 1; /* hace que main ocupe el espacio restante empujando el footer hacia abajo */
-  padding: 20px;
-}
-/*tab section*/
-.tab-section{
-  display:none;
-  width:80%;
-  margin:auto;
-  animation:fadein .4s;
+  padding-top: 80px; /* espacio para el header sticky */
 }
 
-.tab-section.active{
-  display:block;
+/* Tab sections */
+.tab-section {
+  display: none;
+  width: 100%;
+  animation: fadein .4s;
 }
 
-@keyframes fadein{
-  from{opacity:0}
-  to{opacity:1}
+.tab-section.active {
+  display: block;
 }
-/* HERO / PORTADA */
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* HERO / PORTADA con 4 secciones unidas */
 .hero-section {
   color: #fff;
   text-align: center;
 }
-/* Secciones dentro del hero */
+
 .home-section {
-  margin: 60px 0;        /* separación entre secciones */
-  padding: 40px 20px;    /* relleno interno */
-  background: rgba(0,0,0,0.2); /* opcional: fondo semitransparente */
-  border-radius: 10px;   /* opcional: bordes redondeados */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  text-align: center;
+  margin: 0;             /* sin separación entre secciones */
+  padding: 0;            /* sin relleno */
+  position: relative;    /* para overlay-text */
 }
+
 .home-section img {
-  max-width: 80%;
+  width: 100%;           /* ocupa todo el ancho de la pantalla */
   height: auto;
-  margin-bottom: 20px;
-  border-radius: 8px;
+  display: block;        /* elimina espacios debajo de la imagen */
 }
 
-.home-section h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+/* Texto sobre la imagen (opcional) */
+.overlay-text {
+  position: absolute;
+  top: 50%;             
+  left: 50%;            
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
 }
 
-.home-section p {
-  font-size: 1.1rem;
-  line-height: 1.5;
-}
-.hero-section h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+.overlay-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-.hero-section p {
+.overlay-text p {
   font-size: 1.2rem;
-  margin-bottom: 20px;
 }
-/*footer*/
+
+/* Footer */
 .footer {
   background-color: #222;
   color: white;
   text-align: center;
-  padding: 5px;
+  padding: 10px 5px;
 }
 
 .footer a {
@@ -135,10 +136,12 @@ main{
 }
 
 .footer-logo { 
- width: 20px; 
- height: auto; 
- margin-bottom: 0;
+  width: 20px; 
+  height: auto; 
+  margin-bottom: 0;
 }
- 
-/*scroll padding para hacer fijo*/
-html { scroll-padding-top: 100px; /* esto asegura que el contenido no quede oculto debajo del header fijo */ }
+
+/* Scroll padding para header fijo */
+html { 
+  scroll-padding-top: 100px; /* evita que contenido quede oculto debajo del header */
+}
