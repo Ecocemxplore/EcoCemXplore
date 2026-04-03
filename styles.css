@@ -20,6 +20,7 @@ body{
 .header-logo { 
  width: auto; 
  height: 80px; 
+ cursor: pointer;
 margin: auto 0; 
 }
 .nav-inner{
@@ -78,7 +79,6 @@ main{
 }
 /* HERO / PORTADA */
 .hero-section {
-  background: linear-gradient(to right, #90bc9a, #00e18e);
   color: #fff;
   text-align: center;
 }
