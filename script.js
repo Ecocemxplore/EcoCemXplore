@@ -18,6 +18,10 @@ buttons.forEach(btn => {
   });
 });
 
-document.getElementById("logo").addEventListener("click", () => {
-  document.querySelector('button[data-tab="about"]').click();
+document.getElementById("Logo").addEventListener("click", () => {
+   const sections = document.querySelectorAll(".tab-section");
+  sections.forEach(s => s.classList.remove("active"));
+   const buttons = document.querySelectorAll("#tabs button");
+  buttons.forEach(b => b.classList.remove("active"));
+   document.getElementById("home").classList.add("active");
 });
