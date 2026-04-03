@@ -15,6 +15,9 @@ buttons.forEach(btn => {
     // Activar sección correspondiente
     const tabId = btn.getAttribute("data-tab");
     document.getElementById(tabId).classList.add("active");
-
   });
+});
+
+document.getElementById("logo").addEventListener("click", () => {
+  document.querySelector('button[data-tab="about"]').click();
 });
