@@ -90,6 +90,7 @@ main {
 
 .home-section img {
   width: 100%;           /* ocupa todo el ancho de la pantalla */
+  max-width: 100%;
   height: auto;
   display: block;        /* elimina espacios debajo de la imagen */
 }
