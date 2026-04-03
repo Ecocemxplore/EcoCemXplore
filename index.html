@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
+  <title>EcoCemXplore</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
 <header class="navbar">
   <div class="nav-inner">
-   <img src="Logo.png" alt="Logo" class="header-logo" />
+   <img src="Logo.png" alt="Logo" class="header-logo" id="Logo" />
     <nav class="menu" id="tabs">
       <button data-tab="about">About</button>
       <button data-tab="members">Members</button>
-      <button data-tab="research">Research</button>
+      <button data-tab="Research Activities">Research</button>
       <button data-tab="contact">Contact</button>
     </nav>
   </div>
@@ -22,6 +22,16 @@
 
 <!-- 🎯 Secciones tipo TABS -->
 <main>
+<!-- 🌟 HERO / PORTADA -->
+  <section id="home" class="tab-section active hero-section">
+    <h1>Bienvenido a EcoCemXplore</h1>
+    <p>Últimas noticias, proyectos y avances en materiales sostenibles.</p>
+    <ul>
+      <li>Proyecto LC3 finalizado con éxito.</li>
+      <li>Nuevo artículo sobre activación alcalina publicado.</li>
+      <li>Convocatoria de voluntarios para pruebas de materiales eco‑cementicios.</li>
+    </ul>
+  </section>
 
     <section id="about" class="tab-section">
     <h2>About</h2>
@@ -33,7 +43,7 @@
     <p>Aquí irán tus perfiles del equipo.</p>
   </section>
 
-  <section id="research Activities" class="tab-section">
+  <section id="Research Activities" class="tab-section">
     <h2>Research Activities</h2>
     <p>Define aquí tus líneas de investigación: eco‑cementos, LC3, activación alcalina, etc.</p>
   </section>
@@ -44,6 +54,7 @@
   </section>
 
 </main>
+
 <!-- PIE DE PÁGINA -->
 <footer class="footer">
   <img src="eu_logo.png" alt="EU Logo" class="Footer-logo" />
