@@ -1,3 +1,4 @@
+/* Body y Layout general */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -5,7 +6,8 @@ body {
   color: #fff;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* main ocupa el espacio restante */
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -13,17 +15,9 @@ body {
   position: sticky;
   top: 0;
   width: 100%;
-  height: fit-content;
   z-index: 1000;
   background: #90bc9a;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-
-.header-logo { 
-  width: auto; 
-  height: 80px; 
-  cursor: pointer;
-  margin: auto 0; 
 }
 
 .nav-inner {
@@ -60,7 +54,9 @@ body {
 /* Main */
 main {
   flex: 1;
-  padding-top: 80px; /* espacio para el header sticky */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Tab sections */
@@ -68,43 +64,51 @@ main {
   display: none;
   width: 100%;
   animation: fadein .4s;
+  box-sizing: border-box;
 }
 
 .tab-section.active {
   display: block;
 }
 
+/* Ajuste de texto: no pegar al borde */
+.tab-section h2,
+.tab-section p {
+  padding: 0 20px; /* espacio interno horizontal */
+  box-sizing: border-box;
+}
+
+/* Animación fadein */
 @keyframes fadein {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* HERO / PORTADA con 4 secciones unidas */
-
+/* HERO / Portada con 4 secciones unidas */
 .home-section {
-  margin: 0;             /* sin separación entre secciones */
-  padding: 0;            /* sin relleno */
-  position: relative;    /* para overlay-text */
-  width: 100%;           /* ocupa todo el ancho de la pantalla */
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
 }
 
 .home-section img {
-  width: 100%;           /* ocupa todo el ancho de la pantalla */
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  display: block;        /* elimina espacios debajo de la imagen */
+  display: block;
 }
 
-/* Texto sobre la imagen (opcional) */
+/* Texto sobre la imagen */
 .overlay-text {
   position: absolute;
-  top: 50%;             
-  left: 50%;            
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-  padding: 0 20px; /* para que el texto no toque los bordes en pantallas pequeñas */
+  padding: 0 20px; /* espacio a los lados */
+  box-sizing: border-box;
 }
 
 .overlay-text h2 {
@@ -135,13 +139,27 @@ main {
   text-decoration: underline;
 }
 
-.footer-logo { 
-  width: 20px; 
-  height: auto; 
+.footer-logo {
+  width: 20px;
+  height: auto;
   margin-bottom: 0;
 }
 
 /* Scroll padding para header fijo */
-html { 
-  scroll-padding-top: 100px; /* evita que contenido quede oculto debajo del header */
+html {
+  scroll-padding-top: 100px;
+}
+
+/* Responsive: ajuste de textos en móviles */
+@media (max-width: 600px) {
+  .overlay-text h2 {
+    font-size: 1.8rem;
+  }
+  .overlay-text p {
+    font-size: 1rem;
+  }
+  .tab-section h2,
+  .tab-section p {
+    padding: 0 15px; /* menos espacio en pantallas pequeñas */
+  }
 }
