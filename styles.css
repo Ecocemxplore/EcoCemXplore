@@ -1,3 +1,4 @@
+/* BODY */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -7,6 +8,11 @@ body {
   flex-direction: column;
   min-height: 100vh; /* main ocupa el espacio restante */
   overflow-x: hidden;
+}
+/* Scroll suave para enlaces internos */
+html { 
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* evita que contenido quede oculto debajo del header */
 }
 
 /* Header */
@@ -20,13 +26,6 @@ body {
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
-.header-logo { 
-  width: auto; 
-  height: 80px; 
-  cursor: pointer;
-  margin: auto 0; 
-}
-
 .nav-inner {
   width: 90%;
   margin: auto;
@@ -35,15 +34,14 @@ body {
   align-items: center;
 }
 
-.brand {
-  font-size: 1.4rem;
-  font-weight: bold;
+.header-logo { 
+  width: auto; 
+  height: 80px; 
+  cursor: pointer;
+  margin: auto 0; 
 }
 
-.accent {
-  color: #00e18e;
-}
-
+/* Botones del menú */
 .menu button {
   background: none;
   border: 0;
