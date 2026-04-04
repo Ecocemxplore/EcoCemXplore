@@ -119,7 +119,7 @@ main {
   line-height: 1.4;
 }
 
-/* Fondo general */
+/* ===== FOOTER GENERAL ===== */
 .footer {
   background-color: #0f172a;
   color: #e5e7eb;
@@ -127,7 +127,7 @@ main {
   font-family: Arial, sans-serif;
 }
 
-/* Columnas superiores */
+/* ===== COLUMNAS SUPERIORES ===== */
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -157,47 +157,73 @@ main {
 }
 
 .footer a:hover {
-  color: white;
+  color: #ffffff;
 }
 
-/* ===== BLOQUE LOGOS + MSCA ===== */
+/* ===== BLOQUE MSCA (LOGOS + TEXTO) ===== */
 .footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
   margin-top: 40px;
   padding-top: 25px;
   border-top: 1px solid #334155;
+  flex-wrap: wrap;
+}
 
-  display: flex;
-  flex-direction: horizontal; /* todo en columna */
-  align-items: center; /* centrado horizontal */
+/* Texto central */
+.footer-text {
   text-align: center;
-  gap: 10px;
+  max-width: 420px;
+}
+
+.footer-text h3 {
+  color: #fbbf24;
+  margin-bottom: 10px;
+}
+
+.footer-text p {
+  margin: 4px 0;
+  font-size: 14px;
 }
 
 /* Logos más grandes */
 .footer-logo {
-  max-width: 300px; /* 🔥 aquí controlas tamaño */
+  max-width: 200px; /* 🔥 ajusta aquí si quieres más grandes */
   height: auto;
-  margin: 10px 0;
 }
 
-/* Texto MSCA */
-.footer-logos h3 {
-  margin-top: 10px;
-  color: #fbbf24;
-}
-
-.footer-logos p {
-  margin: 3px 0;
-  font-size: 14px;
-}
-
-/* Parte final */
-.footer > p {
+/* ===== PARTE FINAL ===== */
+.footer-bottom {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #334155;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
   font-size: 13px;
 }
 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logos {
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    max-width: 160px;
+  }
+}
 /* Scroll padding para header fijo */
 html { 
   scroll-padding-top: 100px; /* evita que contenido quede oculto debajo del header */
