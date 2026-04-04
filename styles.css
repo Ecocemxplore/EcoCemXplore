@@ -121,7 +121,7 @@ main {
 
 /* ===== FOOTER GENERAL ===== */
 .footer {
-  background-color: #0f172a;
+  background-color: #ffffff;
   color: #e5e7eb;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
@@ -141,7 +141,7 @@ main {
 }
 
 .footer-col h3 {
-  color: #38bdf8;
+  color: #000000;
   margin-bottom: 10px;
 }
 
@@ -152,12 +152,12 @@ main {
 
 /* Links */
 .footer a {
-  color: #cbd5f5;
+  color: #000000;
   text-decoration: none;
 }
 
 .footer a:hover {
-  color: #ffffff;
+  color: #000000;
 }
 
 /* ===== BLOQUE MSCA (LOGOS + TEXTO) ===== */
@@ -179,7 +179,7 @@ main {
 }
 
 .footer-text h3 {
-  color: #fbbf24;
+  color: #000000;
   margin-bottom: 10px;
 }
 
@@ -190,7 +190,7 @@ main {
 
 /* Logos más grandes */
 .footer-logo {
-  max-width: 200px; /* 🔥 ajusta aquí si quieres más grandes */
+  max-width: 250px; /* 🔥 ajusta aquí si quieres más grandes */
   height: auto;
 }
 
@@ -199,7 +199,7 @@ main {
   text-align: center;
   margin-top: 30px;
   padding-top: 15px;
-  border-top: 1px solid #334155;
+  border-top: 1px solid #ffffff;
 }
 
 .footer-bottom p {
