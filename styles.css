@@ -119,30 +119,30 @@ main {
   line-height: 1.4;
 }
 
-/* Footer */
+/* Fondo general */
 .footer {
-  background-color: #0f172a; /* azul oscuro elegante */
+  background-color: #0f172a;
   color: #e5e7eb;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
 }
 
+/* Columnas superiores */
 .footer-content {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
-/* Columnas */
 .footer-col {
   flex: 1;
   min-width: 220px;
 }
 
 .footer-col h3 {
+  color: #38bdf8;
   margin-bottom: 10px;
-  color: #38bdf8; /* azul claro */
 }
 
 .footer-col p {
@@ -157,41 +157,45 @@ main {
 }
 
 .footer a:hover {
-  color: #ffffff;
+  color: white;
 }
 
-/* Logos */
+/* ===== BLOQUE LOGOS + MSCA ===== */
+.footer-logos {
+  margin-top: 40px;
+  padding-top: 25px;
+  border-top: 1px solid #334155;
+
+  display: flex;
+  flex-direction: column; /* todo en columna */
+  align-items: center; /* centrado horizontal */
+  text-align: center;
+  gap: 10px;
+}
+
+/* Logos más grandes */
 .footer-logo {
-  max-width: 120px;
-  margin: 15px 10px 10px 0;
-  display: inline-block;
+  max-width: 220px; /* 🔥 aquí controlas tamaño */
+  height: auto;
+  margin: 10px 0;
 }
 
-/* Parte inferior */
-.footer p:last-of-type {
-  margin-top: 20px;
-  font-size: 13px;
+/* Texto MSCA */
+.footer-logos h3 {
+  margin-top: 10px;
+  color: #fbbf24;
 }
 
-/* Separación final */
+.footer-logos p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+/* Parte final */
 .footer > p {
-  margin-top: 15px;
-}
-
-/* Responsive (móvil) */
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-  }
-
-  .footer-col {
-    margin-bottom: 20px;
-  }
-
-  .footer-logo {
-    display: block;
-    margin: 10px auto;
-  }
+  text-align: center;
+  margin-top: 25px;
+  font-size: 13px;
 }
 
 /* Scroll padding para header fijo */
