@@ -122,7 +122,7 @@ main {
 /* ===== FOOTER GENERAL ===== */
 .footer {
   background-color: #ffffff;
-  color: #e5e7eb;
+  color: #000000;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
 }
@@ -168,7 +168,7 @@ main {
   gap: 40px;
   margin-top: 40px;
   padding-top: 25px;
-  border-top: 1px solid #334155;
+  border-top: 1px solid #ffffff;
   flex-wrap: wrap;
 }
 
