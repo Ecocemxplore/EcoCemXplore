@@ -222,7 +222,3 @@ main {
     max-width: 160px;
   }
 }
-/* Scroll padding para header fijo */
-html { 
-  scroll-padding-top: 100px; /* evita que contenido quede oculto debajo del header */
-}
