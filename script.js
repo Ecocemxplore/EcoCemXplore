@@ -25,3 +25,9 @@ document.getElementById("Logo").addEventListener("click", () => {
   buttons.forEach(b => b.classList.remove("active"));
   
 });
+const logo = document.getElementById("Logo");
+logo.addEventListener("click", (e) => {
+  e.preventDefault(); // evita comportamiento por defecto del <a>
+  const hero = document.querySelector(".hero-section img");
+  hero.scrollIntoView({ behavior: "smooth" });
+});
