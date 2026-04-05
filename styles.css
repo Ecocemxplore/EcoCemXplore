@@ -91,7 +91,6 @@ main {
 
 /* Sección 1 (Portada) */
 .section1 {
-  min-height: auto;
   background-color: #ffffff;
 }
 
@@ -117,7 +116,6 @@ main {
 
 /* Sección 2 */
 .section2 {
-  min-height: auto;
   background-color: #f0f0f0;  /* fondo claro */
   color: #222;                 /* color texto general */
   padding: 80px 20px;
@@ -150,7 +148,6 @@ main {
 
 /* Sección 3 */
 .section3 {
-  min-height: auto;
   background-color: #444; /* fondo intermedio */
 }
 .section3 .overlay-text {
@@ -167,7 +164,6 @@ main {
 }
 /* Sección 4 */
 .section4 {
-  min-height: auto;
   background-color: #ffffff;   
   color: #222;           
   padding: 80px 20px;
