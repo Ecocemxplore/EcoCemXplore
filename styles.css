@@ -136,20 +136,32 @@ main {
 
 /* Sección 2 (About us) */
 .section2 {
-  background-color: #f0f0f0; /* fondo claro */
-  color: #222; /* color del texto general */
+  background-color: #f0f0f0;  /* fondo claro */
+  color: #222;                 /* color texto general */
   padding: 80px 20px;
+  text-align: center;          /* centra todo el contenido */
 }
 
-.section2 h2 {
-  color: #0055aa; /* azul para el título */
-}
-
-.section2 p strong {
-  display: block;
-  font-size: 1.5rem;
-  color: #ff6600; /* naranja para el subtítulo */
+/* Título principal */
+.section2 .section-title {
+  font-size: 2.5rem;
   margin-bottom: 10px;
+  color: #0055aa;
+}
+
+/* Subtítulo */
+.section2 .section-subtitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff6600;
+}
+
+/* Párrafo centrado y ancho limitado */
+.section2 .section-text {
+  max-width: 700px;        /* limita ancho de línea */
+  margin: 0 auto;          /* centra el párrafo */
+  font-size: 1.2rem;
+  line-height: 1.6;        /* separa líneas para mejor lectura */
 }
 
 /* Sección 3 */
