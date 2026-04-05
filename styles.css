@@ -172,10 +172,11 @@ main {
   margin-bottom: 5px;              
 }
 
-/* Subtítulo */
-.section3 .section-subtitle {
-  font-size: 1.6rem;
-  color: #36a277;
+/* Párrafo centrado y ancho limitado */
+.section3 .section-text {
+  max-width: 700px;            /* limita ancho de línea */
+  font-size: 1rem;
+  line-height: 1.6;
   margin-left: 40px;                   /* elimina margen extra */
 }
 /* Sección 4 */
