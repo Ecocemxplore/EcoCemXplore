@@ -81,22 +81,28 @@ main {
 
 /* HERO / PORTADA con 4 secciones unidas */
 
-.home-section {
-  margin: 0;             /* sin separación entre secciones */
-  padding: 0;            /* sin relleno */
-  position: relative;    /* para overlay-text */
-  width: 100%;           /* ocupa todo el ancho de la pantalla */
+.home-section1,
+.home-section2,
+.home-section3,
+.home-section4 {
+  margin: 0;
+  padding: 0;
+  position: relative;   /* necesario para overlay */
+  width: 100%;
 }
 
-.home-section img {
-  width: 100%;           /* ocupa todo el ancho de la pantalla */
-  max-width: 500%;
+/* Imágenes */
+.home-section1 img,
+.home-section3 img,
+.home-section4 img {
+  width: 100%;
+  max-width: 100%;
   height: auto;
-  display: block;        /* elimina espacios debajo de la imagen */
+  display: block;
   margin: 0 auto;
 }
 
-/* Texto sobre la imagen (opcional) */
+/* Texto sobre la imagen */
 .overlay-text {
   position: absolute;
   top: 50%;             
@@ -105,7 +111,7 @@ main {
   color: #fff;
   text-align: center;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-  padding: 0 20px; /* para que el texto no toque los bordes en pantallas pequeñas */
+  padding: 0 20px;
 }
 
 .overlay-text h2 {
@@ -116,6 +122,34 @@ main {
 .overlay-text p {
   font-size: 1.2rem;
   line-height: 1.4;
+}
+/* COLORES PERSONALIZADOS */
+
+/* Sección 1 */
+.home-section1 .overlay-text {
+  color: white;
+}
+
+/* Sección 2 */
+.home-section2 {
+  background-color: #f0f0f0;
+  color: #222;
+}
+
+/* Sección 3 */
+.home-section3 .overlay-text {
+  color: yellow;
+}
+
+/* Sección 4 */
+.home-section4 .overlay-text {
+  color: lightblue;
+}
+.home-section1,
+.home-section2,
+.home-section3,
+.home-section4 {
+  min-height: 100vh;
 }
 
 /* ===== FOOTER GENERAL ===== */
