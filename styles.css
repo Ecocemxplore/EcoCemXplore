@@ -188,14 +188,27 @@ main {
 .section4 .overlay-text {
   color: lightblue;
 }
-.section4 .overlay-text h2 {
+/* Título principal */
+.section2 .section-title {
   font-size: 1rem;
-  margin-bottom: 15px;
+  color: #0055aa;
+  margin-left: 3cm;
+  margin-bottom: 5px;              
 }
 
-.section4 .overlay-text p {
-  font-size: 1.25rem;
-  line-height: 1.4;
+/* Subtítulo */
+.section2 .section-subtitle {
+  font-size: 2rem;
+  color: #ff6600;
+  margin-left: 3cm;                   /* elimina margen extra */
+}
+
+/* Párrafo centrado y ancho limitado */
+.section2 .section-text {
+  max-width: 700px;            /* limita ancho de línea */
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-left: 3cm;                   /* elimina margen extra */
 }
 
 /* ===================== */
