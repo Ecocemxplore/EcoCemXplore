@@ -111,6 +111,7 @@ main {
   transform: translate(-50%, -50%);
   color: #ffffff;
   text-align: center;
+  line-height: normal;
   padding: 0 20px;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
