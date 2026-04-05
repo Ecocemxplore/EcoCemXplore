@@ -105,7 +105,7 @@ main {
 /* Texto sobre la imagen */
 .overlay-text {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
@@ -158,19 +158,25 @@ main {
 /* Sección 3 */
 .section3 {
   min-height: auto;
-  background-color: #444; /* fondo intermedio */
+  background-color: #f0f0f0;  /* fondo claro */
+  color: #222;                 /* color texto general */
+  padding: 80px 20px;
+  text-align: left;    
+  display: block; 
 }
-.section3 .overlay-text {
-  color: yellow;
-}
-.section3 .overlay-text h2 {
-  font-size: 3rem;
-  margin-bottom: 15px;
+/* Título principal */
+.section3 .section-title {
+  font-size: 1rem;
+  color: #0055aa;
+  margin-left: 40px;
+  margin-bottom: 5px;              
 }
 
-.section3 .overlay-text p {
-  font-size: 1.5rem;
-  line-height: 1.4;
+/* Subtítulo */
+.section3 .section-subtitle {
+  font-size: 1.6rem;
+  color: #36a277;
+  margin-left: 40px;                   /* elimina margen extra */
 }
 /* Sección 4 */
 .section4 {
