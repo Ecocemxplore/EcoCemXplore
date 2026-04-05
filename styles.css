@@ -150,14 +150,14 @@ main {
   font-size: 1rem;
   color: #0055aa;
   margin-left: 3cm;
-  margin-bottom: 10px;              
+  margin-bottom: 5px;              
 }
 
 /* Subtítulo */
 .section2 .section-subtitle {
   font-size: 2rem;
   color: #ff6600;
-  margin-bottom: 50;                   /* elimina margen extra */
+  margin-left: 3cm;                   /* elimina margen extra */
 }
 
 /* Párrafo centrado y ancho limitado */
