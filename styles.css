@@ -139,7 +139,8 @@ main {
   background-color: #f0f0f0;  /* fondo claro */
   color: #222;                 /* color texto general */
   padding: 80px 20px;
-  text-align: left;          
+  text-align: left;    
+  display: block;      
 }
 
 /* Título principal */
