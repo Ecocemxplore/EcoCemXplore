@@ -79,24 +79,23 @@ main {
   to { opacity: 1; }
 }
 
-/* HERO / PORTADA con 4 secciones unidas */
-
-.home-section1,
-.home-section2,
-.home-section3,
-.home-section4 {
+/* Portada/BASE PARA TODAS LAS SECCIONES */
+.home-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;  /* ocupa toda la pantalla */
   margin: 0;
   padding: 0;
-  position: relative;   /* necesario para overlay */
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-/* Imágenes */
-.home-section1 img,
-.home-section3 img,
-.home-section4 img {
+/* Imágenes en secciones con overlay */
+.home-section img {
   width: 100%;
-  max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -105,51 +104,70 @@ main {
 /* Texto sobre la imagen */
 .overlay-text {
   position: absolute;
-  top: 50%;             
-  left: 50%;            
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
   text-align: center;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
   padding: 0 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
 .overlay-text h2 {
-  font-size: 5rem;
-  margin-bottom: 10px;
+  font-size: 4rem;
+  margin-bottom: 15px;
 }
 
 .overlay-text p {
   font-size: 1.2rem;
   line-height: 1.4;
 }
-/* COLORES PERSONALIZADOS */
 
-/* Sección 1 */
-.home-section1 .overlay-text {
-  color: white;
+/* ===================== */
+/* COLORES POR SECCIÓN */
+/* ===================== */
+
+/* Sección 1 (Portada) */
+.section1 {
+  background-color: #222;  /* fondo oscuro */
+}
+.section1 .overlay-text {
+  color: #fff;
 }
 
-/* Sección 2 */
-.home-section2 {
-  background-color: #f0f0f0;
-  color: #222;
+/* Sección 2 (About us) */
+.section2 {
+  background-color: #f0f0f0; /* fondo claro */
+  color: #222; /* texto oscuro */
+  padding: 80px 20px; /* para que el texto no quede pegado */
 }
 
 /* Sección 3 */
-.home-section3 .overlay-text {
+.section3 {
+  background-color: #444; /* fondo intermedio */
+}
+.section3 .overlay-text {
   color: yellow;
 }
 
 /* Sección 4 */
-.home-section4 .overlay-text {
+.section4 {
+  background-color: #222;
+}
+.section4 .overlay-text {
   color: lightblue;
 }
-.home-section1,
-.home-section2,
-.home-section3,
-.home-section4 {
-  min-height: 100vh;
+
+/* ===================== */
+/* ESTILO RESPONSIVO */
+/* ===================== */
+@media (max-width: 768px) {
+  .overlay-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .overlay-text p {
+    font-size: 1rem;
+  }
 }
 
 /* ===== FOOTER GENERAL ===== */
