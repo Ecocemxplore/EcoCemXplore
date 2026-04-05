@@ -183,7 +183,8 @@ main {
 /* Sección 4 */
 .section4 {
   min-height: auto;
-  background-color: #ffffff;              
+  background-color: #ffffff;   
+  color: #222;           
   padding: 80px 20px;
   text-align: left;    
   display: block; 
