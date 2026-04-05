@@ -57,13 +57,11 @@ html {
 }
 
 /* Main */
-.home-section {
-  scroll-margin-top: 80px; /* hace que el scroll automático respete el header */
-}
 main {
   flex: 1;
   padding: 0 20px; /* espacio para el header sticky */
   margin: 0;
+  padding-top: 80px;
 }
 
 /* Tab sections */
@@ -123,7 +121,7 @@ main {
 }
 
 .section1 .overlay-text p {
-  font-size: 4rem;
+  font-size: 3.5rem;
   white-space: nowrap;
 }
 
