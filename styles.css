@@ -57,6 +57,9 @@ html {
 }
 
 /* Main */
+.home-section {
+  scroll-margin-top: 80px; /* hace que el scroll automático respete el header */
+}
 main {
   flex: 1;
   padding: 0 20px; /* espacio para el header sticky */
