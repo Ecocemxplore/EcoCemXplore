@@ -86,11 +86,13 @@ main {
   min-height: 100vh;  /* ocupa toda la pantalla */
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   box-sizing: border-box;
+}
+
+/* Sección 1 (Portada) */
+.section1 {
+  min-height: auto;
+  background-color: #ffffff;
 }
 
 /* Imágenes en secciones con overlay */
@@ -107,27 +109,10 @@ main {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #ffffff;
   text-align: center;
   padding: 0 20px;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-}
-
-/* Sección 1 (Portada) */
-.section1 {
-  min-height: auto;
-  background-color: #222;  /* fondo oscuro */
-}
-.section1 .overlay-text {
-  color: #fff;
-}
-.section1 .overlay-text h2 {
-  font-size: 4rem;
-  margin-bottom: 15px;
-}
-
-.section1 .overlay-text p {
-  font-size: 3rem;
-  line-height: 1.4;
 }
 
 /* Sección 2 */
