@@ -134,30 +134,27 @@ main {
   color: #fff;
 }
 
-/* Sección 3 */
+/* Sección 2 */
 .section2 {
   background-color: #f0f0f0;  /* fondo claro */
   color: #222;                 /* color texto general */
   padding: 80px 20px;
-  text-align: center;          /* centra horizontalmente los textos */
-  display: flex;               /* flex para controlar dirección */
-  flex-direction: column;      /* fuerza apilamiento vertical */
-  align-items: center;         /* centra los elementos horizontalmente */
-  gap: 10px;                   /* espacio entre título, subtítulo y párrafo */
+  text-align: left;          
 }
 
 /* Título principal */
 .section2 .section-title {
-  font-size: 2.5rem;
+  font-size: 1rem;
   color: #0055aa;
-  margin: 0;                   /* elimina margen extra */
+  margin-left: 3 cm;
+  margin-bottom: 10px;              
 }
 
 /* Subtítulo */
 .section2 .section-subtitle {
   font-size: 2rem;
   color: #ff6600;
-  margin: 0;                   /* elimina margen extra */
+  margin-bottom: 50;                   /* elimina margen extra */
 }
 
 /* Párrafo centrado y ancho limitado */
@@ -165,7 +162,7 @@ main {
   max-width: 700px;            /* limita ancho de línea */
   font-size: 1.2rem;
   line-height: 1.6;
-  margin: 0;                   /* elimina margen extra */
+  margin-left: 3 cm;                   /* elimina margen extra */
 }
 
 /* Sección 3 */
