@@ -183,10 +183,10 @@ main {
 /* Sección 4 */
 .section4 {
   min-height: auto;
-  background-color: #222;
-}
-.section4 .overlay-text {
-  color: lightblue;
+  background-color: #222;              
+  padding: 80px 20px;
+  text-align: left;    
+  display: block; 
 }
 /* Título principal */
 .section2 .section-title {
