@@ -12,7 +12,7 @@ body {
 /* Scroll suave para enlaces internos */
 html { 
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* evita que contenido quede oculto debajo del header */
+  scroll-padding-top: 80px; /* evita que contenido quede oculto debajo del header */
 }
 
 /* Header */
@@ -61,7 +61,6 @@ main {
   flex: 1;
   padding: 0 20px; /* espacio para el header sticky */
   margin: 0;
-  padding-top: 80px;
 }
 
 /* Tab sections */
