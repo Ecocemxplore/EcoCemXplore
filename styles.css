@@ -121,12 +121,12 @@ main {
   color: #fff;
 }
 .section1 .overlay-text h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 15px;
 }
 
 .section1 .overlay-text p {
-  font-size: 1.5rem;
+  font-size: 3rem;
   line-height: 1.4;
 }
 
@@ -189,12 +189,12 @@ main {
   color: lightblue;
 }
 .section4 .overlay-text h2 {
-  font-size: 3rem;
+  font-size: 1rem;
   margin-bottom: 15px;
 }
 
 .section4 .overlay-text p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.4;
 }
 
