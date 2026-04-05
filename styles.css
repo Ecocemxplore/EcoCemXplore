@@ -137,8 +137,19 @@ main {
 /* Sección 2 (About us) */
 .section2 {
   background-color: #f0f0f0; /* fondo claro */
-  color: #222; /* texto oscuro */
-  padding: 80px 20px; /* para que el texto no quede pegado */
+  color: #222; /* color del texto general */
+  padding: 80px 20px;
+}
+
+.section2 h2 {
+  color: #0055aa; /* azul para el título */
+}
+
+.section2 p strong {
+  display: block;
+  font-size: 1.5rem;
+  color: #ff6600; /* naranja para el subtítulo */
+  margin-bottom: 10px;
 }
 
 /* Sección 3 */
