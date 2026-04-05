@@ -112,20 +112,6 @@ main {
   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
-.overlay-text h2 {
-  font-size: 6rem;
-  margin-bottom: 15px;
-}
-
-.overlay-text p {
-  font-size: 5rem;
-  line-height: 1.4;
-}
-
-/* ===================== */
-/* COLORES POR SECCIÓN */
-/* ===================== */
-
 /* Sección 1 (Portada) */
 .section1 {
   min-height: auto;
@@ -133,6 +119,15 @@ main {
 }
 .section1 .overlay-text {
   color: #fff;
+}
+.section1 .overlay-text h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.section1 .overlay-text p {
+  font-size: 1.5rem;
+  line-height: 1.4;
 }
 
 /* Sección 2 */
@@ -176,7 +171,15 @@ main {
 .section3 .overlay-text {
   color: yellow;
 }
+.section3 .overlay-text h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
 
+.section3 .overlay-text p {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
 /* Sección 4 */
 .section4 {
   min-height: auto;
@@ -184,6 +187,15 @@ main {
 }
 .section4 .overlay-text {
   color: lightblue;
+}
+.section4 .overlay-text h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.section4 .overlay-text p {
+  font-size: 1.5rem;
+  line-height: 1.4;
 }
 
 /* ===================== */
