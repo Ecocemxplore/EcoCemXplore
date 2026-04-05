@@ -83,7 +83,6 @@ main {
 .home-section {
   position: relative;
   width: 100%;
-  min-height: 100vh;  /* ocupa toda la pantalla */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -91,6 +90,7 @@ main {
 
 /* Sección 1 (Portada) */
 .section1 {
+  min-height: auto;
   position:relative;
   background-color: #ffffff;
 }
@@ -116,6 +116,7 @@ main {
 
 /* Sección 2 */
 .section2 {
+  min-height: auto;
   background-color: #f0f0f0;  /* fondo claro */
   color: #222;                 /* color texto general */
   padding: 80px 20px;
@@ -148,6 +149,7 @@ main {
 
 /* Sección 3 */
 .section3 {
+  min-height: auto;
   background-color: #444; /* fondo intermedio */
 }
 .section3 .overlay-text {
@@ -164,6 +166,7 @@ main {
 }
 /* Sección 4 */
 .section4 {
+  min-height: auto;
   background-color: #ffffff;   
   color: #222;           
   padding: 80px 20px;
