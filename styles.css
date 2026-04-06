@@ -106,7 +106,7 @@ html {
 /* Sección 2 */
 .section2 {
   min-height: auto;
-  background-color: #f0f0f0;  /* fondo claro */
+  background-color: #ffffff;  /* fondo claro */
   color: #222;                 /* color texto general */
   padding: 80px 20px;
   text-align: left;    
@@ -139,7 +139,7 @@ html {
 /* Sección 3 */
 .section3 {
   min-height: auto;
-  background-color: #f0f0f0;  /* fondo claro */
+  background-color: #ffffff;  /* fondo claro */
   color: #222;                 /* color texto general */
   padding: 80px 20px;
   text-align: left;    
