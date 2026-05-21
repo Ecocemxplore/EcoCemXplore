@@ -34,7 +34,7 @@ body {
 
 /* ===== LOGO ===== */
 .header-logo {
-  height: 90px;
+  height: 120px;
   width: auto;
   margin-left: 150px;
 
@@ -98,8 +98,6 @@ body {
   border: 1.5px solid #36a277;
   box-shadow: 0 2px 8px rgba(54,162,119,0.15);
 }
-
-
 
 /* Scroll suave para enlaces internos */
 html { 
@@ -789,7 +787,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
   gap: 35px;
-  align-items: border-box;
+  padding: 0 0 100px 0;
 }
 /* cada tarjeta */
 .item {
