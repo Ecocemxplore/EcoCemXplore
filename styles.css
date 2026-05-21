@@ -14,19 +14,19 @@ body {
 /* ===== HEADER ===== */
 .navbar {
   position: sticky;
-  top: 15px;
+  top: 20px;
   z-index: 1000;
-
-  background: transparent;
-  box-shadow: none;
 
   display: flex;
   justify-content: center;
+
+  background: transparent;
 }
 
 /* CONTENEDOR */
 .nav-inner {
-  width: 95%;
+  width: 92%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,59 +34,71 @@ body {
 
 /* ===== LOGO ===== */
 .header-logo {
-  height: 75px;
+  height: 65px;
   width: auto;
 
-  background: white;
-  padding: 10px 18px;
-  border-radius: 14px;
-
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-
   cursor: pointer;
+
   transition: transform 0.3s ease;
 }
 
 .header-logo:hover {
-  transform: translateY(-2px);
+  transform: scale(1.05);
 }
 
-/* ===== MENU ===== */
+/* ===== MENU GENERAL ===== */
 .menu {
   display: flex;
-  gap: 12px;
+  align-items: center;
+  gap: 5px;
+
+  padding: 8px 10px;
+
+  background: rgba(245,245,245,0.92);
+
+  border: 1px solid rgba(54,162,119,0.25);
+
+  border-radius: 16px;
+
+  backdrop-filter: blur(8px);
+
+  box-shadow:
+    0 6px 18px rgba(0,0,0,0.08);
 }
 
-/* BOTONES INDIVIDUALES */
+/* ===== BOTONES ===== */
 .menu button {
-  background: white;
+  background: transparent;
   border: none;
 
-  padding: 12px 20px;
-  border-radius: 12px;
+  padding: 10px 18px;
+
+  border-radius: 10px;
 
   font-size: 1rem;
+  font-weight: 500;
+
   color: #222;
 
   cursor: pointer;
-
-  box-shadow: 0 4px 10px rgba(0,0,0,0.10);
 
   transition: all 0.3s ease;
 }
 
 /* HOVER */
 .menu button:hover {
-  background: #36a277;
-  color: white;
-  transform: translateY(-2px);
+  color: #36a277;
 }
 
 /* ACTIVO */
 .menu button.active {
-  background: #36a277;
-  color: white;
+  background: transparent;
+  color: #36a277;
+  border: 1.5px solid #36a277;
+  box-shadow: 0 2px 8px rgba(54,162,119,0.15);
 }
+
+
 
 /* Scroll suave para enlaces internos */
 html { 
@@ -1026,5 +1038,26 @@ main {
 
   .footer-logo {
     max-width: 160px;
+  }
+}
+@media (max-width: 768px) {
+
+  .nav-inner {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu button {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+  }
+
+  .header-logo {
+    height: 55px;
   }
 }
