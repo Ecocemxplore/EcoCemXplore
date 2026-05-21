@@ -7,7 +7,13 @@
   <title>EcoCemXplore</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+ <!-- ENVIAR FORMULARIO -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+<script>
+  emailjs.init("Ek-voagZkTzMY9wh-");
+</script>
+ <!-- BODY -->
 <body>
 <header class="navbar">
   <div class="nav-inner">
@@ -17,7 +23,7 @@
     <nav class="menu" id="tabs">
       <button data-tab="about">About</button>
       <button data-tab="members">Members</button>
-      <button data-tab="Research Activities">Research</button>
+      <button data-tab="ResearchActivities">Research</button>
       <button data-tab="contact">Contact</button>
     </nav>
   </div>
@@ -67,51 +73,358 @@
     <!-- Título principal -->
    <h2 class="section-title">About</h2>
    <!-- Subtítulo más grande -->
-   <h3 class="section-subtitle">EcoCemXplore-Project: Exploring Eco-efficient blended cements Innovations in performance and sustainability</h3>
+   <h3 class="section-subtitle">EcoCemXplore-Project: Exploring Eco-efficient blended cements innovations in performance and sustainability</h3>
    <!-- Párrafo centrado con ancho limitado -->
-   <p class="section-text">
-    Europe is committed to achieve the ambitious goal of reducing greenhouse emissions and to transition towards an energy-neutral built
-    environment by 2050. The construction sector, which contributes >70% of CO2 emissions in many countries, urgently needs to adopt
-    greener practices. In response to this challenge, this research combines materials science, environmental science and civil engineering to
-    develop new novel cements with the potential to reduce CO2 emissions from Portland cement by up to 40%. The main aim of this project is
-    to develop an innovative and comprehensive approach to optimizing the design of new ultra-low clinker hybrid alkaline cements (HAC),
-    using treated low-purity clays as cement replacements, in combination with sodium sulfate. This will be achieved by: - Determining
-    the effectiveness of calcination or mechano-chemical (MCA) activation in enhancing the pozzolanicity of low-purity clays, focusing on
-    revealing nano-structural alterations induced by such treatments in the clay structure/ mineralogy. - Elucidating the factors controlling the
-    fresh state properties of HAC produced from calcined or MCA clays, focusing on rheology, reaction kinetics and in-situ characterisation
-    of the reaction products forming less than48h of reaction. - Revealining how mix design formulations of HAC control their phase assemblages
-    evolution, this is interrogated by using conventional characterization techniques, along with advanced synchrotron techniques including
-    advanced computerised X-ray tomography techniques. - Creating an experimentally validated thermodynamic modelling to predict of the
-    phase evolution of HAC, as a function low-purity clays chemistry and mix design parameters. This project will allow the identification
-    of key strategies that will help transform the use of low-content clays in the development of eco-efficient cements.
-   </p>
-   <h3 class="section-subtitle">Key Information</h3>
-    <ul>
-      <li>Grant agreement: <strong>101206047</strong></li>
-      <li>DOI: <strong>10.13039/501100000780</strong></li>
-      <li>Funder: <strong>European Commission</strong></li>
-      </ul>
-    <ul>
-      <li>Start: <strong>September 2025</strong></li>
-      <li>End: <strong>August 2027</strong></li>
-      <li>Coordinator: University of Bath</li>
-    </ul>
+   <div class="aboout-content">
+    <div class="about-text">
+     <p class="section-text">
+      Building a low-carbon future starts with transforming the materials we rely on most. EcoCemXplore aims to develop innovative, sustainable cements that could cut emissions by up to 40% compared to traditional Portland cement. To achieve this, the project brings together materials science, civil engineering, and environmental science to design ultra-low-clinker hybrid alkaline cements that use treated low-purity clays. The project investigates ways to enhance clay reactivity and optimise fresh-state properties, as well as understanding phase evolution over time, through advanced characterisation techniques and thermodynamic modelling. Ultimately, the project will identify key strategies for promoting the use of low-cost clays in developing eco-efficient, low-carbon cements.
+     </p>
+   </div>
+    <div class="about-image">
+      <img src="About.jpg" alt="About" />
+    </div>
+   </div>
+   
+   <section class="project-info">
+    <h3 class="project-title">Project Information</h3>
+    
+    <div class="project-col">
+     <!-- Columna izquierda -->
+     <div class="left-col">
+
+      <div class="info-block">
+       <p class="label">Project acronym</p>
+       <p class="value">EcoCemXplore</p>
+      </div>
+
+      <div class="info-block">
+       <p class="label">Grant agreement ID</p>
+       <p class="value">101206047</p>
+      </div>
+
+      <div class="info-block">
+       <p class="label">DOI</p>
+         <a href="https://doi.org/10.13039/501100000780" target="_blank" rel="noopener noreferrer">
+            https://doi.org/10.13039/501100000780
+         </a>
+      </div>
+
+      <div class="info-block">
+       <p class="label">Funded by</p>
+       <p class="value">European Commission</p>
+     </div>
+     </div>
+
+      <!-- Columna derecha -->
+     <div class="right-col">
+       <div class="info-block">
+        <p class="label">Budget</p>
+        <p class="value">€280,000</p>
+       </div>
+
+       <div class="info-block">
+        <p class="label">Project duration</p>
+        <p class="value">September 2025 – August 2027</p>
+       </div>
+
+       <div class="info-block">
+        <p class="label">Coordinator</p>
+        <p class="value">University of Bath/UK</p>
+       </div>
+     </div>
+    </div>
+</section>
+
   </section>
 
-  <section id="members" class="tab-section">
-    <h2>Members</h2>
-    <p>Aquí irán tus perfiles del equipo.</p>
+  <section id="members" class="tab-section"> 
+<div class="tab-content">
+        <h3 class="section-title">Members</h3>
+       
+    <!-- PERFIL 1 -->
+    <div class="member-block">  
+     <div class="header-lines header-segundo"></div>
+     <div class="profile-card">
+      <div class="profile-photo">
+        <img src="SS.jpeg" alt="me" />
+      </div>
+      <!-- INFO -->
+      <div class="profile-info">
+        <h2>Dr.Segundo M. Shagnay Pucha</h2>
+        <p class="role">MSCA Fellow</p>
+        <p><strong>Email:</strong> smsp20@bath.ac.uk</p>
+        <p><strong>Tel:</strong> +44 000 000</p>
+      </div>
+
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about-section">
+      <h2>About me</h2>
+      <p>
+       Materials Science and Engineering researcher specialising in sustainable cementitious 
+       materials, with a focus on eco-efficient alternatives to Portland cement, alkali-activated
+       and hybrid binders, and the durability and corrosion behaviour of reinforced systems. 
+       Research combines advanced electrochemical techniques and micro- and nanoscale 
+       characterisation to understand degradation mechanisms and improve long-term 
+       performance of construction materials. Currently a Marie Skłodowska-Curie 
+       Postdoctoral Fellow at the University of Bath, leading the EcoCemXplore project, which 
+       investigates low-clinker hybrid cements, reaction mechanisms, phase evolution, and 
+       durability using advanced experimental approaches, including synchrotron-based 
+       techniques. Holds a PhD (Cum Laude) from the University Carlos III of Madrid, with 
+       extensive experience in eco-efficient construction materials and corrosion science. 
+       Previous research positions include the Institute of Ceramics and Glass (CSIC), TU Delft, 
+       the University Carlos III of Madrid, ICAI (Universidad Pontificia Comillas), and the Escuela
+       Superior Politécnica de Chimborazo (ESPOCH), alongside teaching experience in Spain 
+       and Ecuador. Has contributed to multiple international research projects and 
+       collaborations across Europe and beyond, resulting in peer-reviewed publications in 
+       leading journals in construction materials and corrosion science. 
+      </p>
+    </div>
+    <!-- SOCIAL -->
+    <div class="social-section">
+      <h2>Social Media</h2>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/segundo-m-shag%C3%B1ay-pucha-16a469198/">LinkedIn</a>
+        <a href="https://orcid.org/0000-0001-8794-5805">ORCID</a>
+      </div>
+    </div>
+  <!-- PERFIL 2 -->
+    <div class="member-block">  
+     <div class="header-lines header-susan"></div>
+     <div class="profile-card">
+      <div class="profile-photo">
+        <img src="SB.jpeg" alt="me" />
+      </div>
+      <!-- INFO -->
+      <div class="profile-info">
+        <h2>Prof Susan A. Bernal Lopez</h2>
+        <p class="role">MSCA Fellow Coordinator</p>
+        <p><strong>Email:</strong> sbl30@bath.ac.uk</p>
+        <p><strong>Tel:</strong> +44 000 000</p>
+      </div>
+
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about-section">
+      <h2>About me</h2>
+      <p>
+        Aquí va tu descripción profesional. Puedes escribir tu experiencia,
+        investigación, intereses y trayectoria académica.
+      </p>
+    </div>
+    <!-- SOCIAL -->
+    <div class="social-section">
+      <h2>Social Media</h2>
+
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">ORCID</a>
+      </div>
+    </div>
+    <!-- PERFIL 3 -->
+    <div class="member-block">  
+     <div class="header-lines header-andrew"></div>
+     <div class="profile-card">
+      <div class="profile-photo">
+        <img src="AH.jpeg" alt="me" />
+      </div>
+      <!-- INFO -->
+      <div class="profile-info">
+        <h2>Prof Andrew Heath</h2>
+        <p class="role">MSCA Fellow Coordinator</p>
+        <p><strong>Email:</strong> absah@bath.ac.uk</p>
+        <p><strong>Tel:</strong> +44 000 000</p>
+      </div>
+
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about-section">
+      <h2>About me</h2>
+      <p>
+        Aquí va tu descripción profesional. Puedes escribir tu experiencia,
+        investigación, intereses y trayectoria académica.
+      </p>
+    </div>
+    <!-- SOCIAL -->
+    <div class="social-section">
+      <h2>Social Media</h2>
+
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">ORCID</a>
+      </div>
+    </div>
+    <!-- PERFIL 4 -->
+    <div class="member-block">  
+     <div class="header-lines header-xinyuan"></div>
+     <div class="profile-card">
+      <div class="profile-photo">
+        <img src="XK.jpeg" alt="me" />
+      </div>
+      <!-- INFO -->
+      <div class="profile-info">
+        <h2>Dr. Xinyuan Ke</h2>
+        <p class="role">MSCA Fellow Coordinator</p>
+        <p><strong>Email:</strong> xk221@bath.ac.uk</p>
+        <p><strong>Tel:</strong> +44 000 000</p>
+      </div>
+
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about-section">
+      <h2>About me</h2>
+      <p>
+        Aquí va tu descripción profesional. Puedes escribir tu experiencia,
+        investigación, intereses y trayectoria académica.
+      </p>
+    </div>
+    <!-- SOCIAL -->
+    <div class="social-section">
+      <h2>Social Media</h2>
+
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">ORCID</a>
+      </div>
+    </div>
+  </section>
+<!-- RESEARCH ACTIVITIES -->
+   <section id="ResearchActivities" class="tab-section">
+     <div class="home-section section2">
+         <!-- Título principal -->
+       <h2 class="section-title">Research Activities</h2>
+        <!-- Subtítulo más grande -->
+       <h3 class="section-subtitle">EcoCemXplore</h3>
+        <!-- Párrafo centrado con ancho limitado -->
+       <p class="section-text">
+        We are currently developing innovative eco-efficient blended cement systems as part of the EcoCemXplore project. Our research focuses on designing low-carbon, ultra-low-clinker hybrid alkaline cements using treated low-purity clays. We investigate material reactivity, fresh-state performance, and long-term phase evolution through experimental testing, advanced characterisation techniques, and thermodynamic modelling
+       </p>
+      </div>
+    
+    <div class="gallery">
+
+      <div class="item">
+        <img src="Research1.jpg" alt="Research1" onclick="toggleInfo(this)"/>
+        <h3 class="title">Workability of Eco-efficient Cements</h3>
+        <div class="info">
+          Investigating the fresh-state properties of eco-efficient cements, including rheology, setting time, and early-age strength development, to optimize mix designs for practical applications.
+        </div>
+       </div>
+       
+      <div class="item">
+        <img src="Research2.jpg" alt="Research2" onclick="toggleInfo(this)"/>
+        <h3 class="title">RILEM Convention</h3>
+        <div class="info">
+          Conference presentation on the durability of eco-efficient cements.
+        </div>
+      </div>
+      
+      <div class="item">
+        <img src="Research3.jpg" alt="Research3" onclick="toggleInfo(this)"/>
+        <h3 class="title">Microstructural Analysis</h3>
+        <div class="info">
+          Using advanced microscopy techniques to analyze the microstructure of eco-efficient cements and understand their performance.
+        </div>
+      </div>
+
+       <div class="item">
+        <img src="Research4.jpg" alt="Research4" onclick="toggleInfo(this)"/>
+        <h3 class="title">Training courses</h3>
+        <div class="info">
+          Participation in specialised training courses aimed at strengthening skills in cement chemistry, sustainable construction materials, advanced characterisation techniques, and thermodynamic modelling. These courses support the development of expertise relevant to eco-efficient cement research.
+        </div>
+      </div>
+
+       <div class="item">
+        <img src="Research5.jpg" alt="Research5" onclick="toggleInfo(this)"/>
+        <h3 class="title">Training courses</h3>
+        <div class="info">
+          Participation in specialised training courses aimed at strengthening skills in cement chemistry, sustainable construction materials, advanced characterisation techniques, and thermodynamic modelling. These courses support the development of expertise relevant to eco-efficient cement research.
+        </div>
+      </div>
+
+       <div class="item">
+        <img src="Research6.jpg" alt="Research6" onclick="toggleInfo(this)"/>
+        <h3 class="title">Training courses</h3>
+        <div class="info">
+          Participation in specialised training courses aimed at strengthening skills in cement chemistry, sustainable construction materials, advanced characterisation techniques, and thermodynamic modelling. These courses support the development of expertise relevant to eco-efficient cement research.
+        </div>
+      </div>
+
+    </div>
+
   </section>
 
-  <section id="Research Activities" class="tab-section">
-    <h2>Research Activities</h2>
-    <p>Define aquí tus líneas de investigación: eco‑cementos, LC3, activación alcalina, etc.</p>
-  </section>
+<!-- contact -->
+<section id="contact" class="tab-section tab-content">
 
-  <section id="contact" class="tab-section">
-    <h2>Contact</h2>
-    <p>Email: info@ecocemxplore.org</p>
-  </section>
+  <!-- TITULO -->
+  <h2 class="section-title">Contact</h2>
+
+  <p class="section-text">
+    If you would like more information about EcoCemXplore,
+    collaborations, research activities, or training opportunities,
+    please contact us using the form below.
+  </p>
+
+  <div class="contact-container">
+
+    <!-- FORMULARIO -->
+    <div class="contact-form">
+
+      <form id="contact-form">
+
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" name="first_name" placeholder="Enter your first name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" name="last_name" placeholder="Enter your last name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Institution</label>
+          <input type="text" name="institution" placeholder="Your institution">
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Your email address" required>
+        </div>
+
+        <div class="form-group">
+          <label>Write a message</label>
+          <textarea name="message" rows="6" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="contact-btn">
+          Send Request
+        </button>
+
+      </form>
+
+      <p class="privacy-note">
+        Your information will only be used to respond to your enquiry.
+      </p>
+
+    </div>
+
+    <!-- IMAGEN -->
+    <div class="contact-image">
+      <img src="Contact.jpg" alt="Contact">
+    </div>
+
+  </div>
+
+</section>
 
 <!-- PIE DE PÁGINA -->
 <footer class="footer">
@@ -176,10 +489,10 @@
 
 </div>
   <div class="footer-bottom">
-   <p>&copy; 2026 EcoCemXplore | Todos los derechos reservados</p>
+   <p>&copy; 2026 EcoCemXplore | All rights reserved</p>
    <p>
-    <a href="#">Política de Privacidad</a> |
-    <a href="#">Términos y Condiciones</a>
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Terms and Conditions</a>
    </p>
    </div>
 </footer>

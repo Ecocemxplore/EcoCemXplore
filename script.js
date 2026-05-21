@@ -31,3 +31,36 @@ logo.addEventListener("click", (e) => {
   const hero = document.querySelector(".hero-section img");
   hero.scrollIntoView({ behavior: "smooth" });
 });
+
+function toggleInfo(img) {
+  const item = img.parentElement;
+  const info = item.querySelector(".info");
+
+  if (info.style.display === "block") {
+    info.style.display = "none";
+  } else {
+    info.style.display = "block";
+  }
+}
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    emailjs.sendForm(
+      "Ek-voagZkTzMY9wh-",
+      "template_ke7tspk",
+      this
+    )
+    .then(() => {
+      alert("Message sent successfully!");
+      this.reset();
+    })
+    .catch((error) => {
+      alert("Error sending message");
+      console.log(error);
+    });
+
+});
