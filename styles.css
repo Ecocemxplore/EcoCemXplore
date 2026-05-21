@@ -289,12 +289,13 @@ main {
   grid-template-columns: 2fr 1fr; /* texto más ancho */
   gap: 40px;
   align-items: center;
-  margin-top: 20px;
 }
 
 /* Texto */
 .about-text {
   max-width: 700px;
+  margin-top: 20px;
+  
 }
 
 /* Imagen */
