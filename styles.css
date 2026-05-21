@@ -11,29 +11,81 @@ body {
 }
 
 /* Header */
+/* ===== HEADER ===== */
 .navbar {
   position: sticky;
-  top: 0;
-  width: 100%;
-  height: fit-content;
+  top: 15px;
   z-index: 1000;
-  background: #90bc9a;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+
+  background: transparent;
+  box-shadow: none;
+
+  display: flex;
+  justify-content: center;
 }
 
+/* CONTENEDOR */
 .nav-inner {
-  width: 90%;
-  margin: auto;
+  width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-logo { 
-  width: auto; 
-  height: 80px; 
+/* ===== LOGO ===== */
+.header-logo {
+  height: 75px;
+  width: auto;
+
+  background: white;
+  padding: 10px 18px;
+  border-radius: 14px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+
   cursor: pointer;
-  margin: auto 0; 
+  transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== MENU ===== */
+.menu {
+  display: flex;
+  gap: 12px;
+}
+
+/* BOTONES INDIVIDUALES */
+.menu button {
+  background: white;
+  border: none;
+
+  padding: 12px 20px;
+  border-radius: 12px;
+
+  font-size: 1rem;
+  color: #222;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+.menu button:hover {
+  background: #36a277;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ACTIVO */
+.menu button.active {
+  background: #36a277;
+  color: white;
 }
 
 /* Scroll suave para enlaces internos */
