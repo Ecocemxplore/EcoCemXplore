@@ -131,6 +131,7 @@ html {
 
 /* Sección 1 (Portada) */
 .section1 {
+  margin-top: -20px;
   min-height: auto;
   position:relative;
   background-color: #ffffff;
@@ -146,13 +147,12 @@ html {
 /* Texto sobre la imagen */
 .overlay-text {
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   color: #ffffff;
   text-align: center;
   line-height: normal;
-  padding: 0 20px;
+  padding:20px;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 /* Tamaño del texto sobre la imagen */
@@ -169,12 +169,30 @@ html {
 /* Sección 2 */
 .section2 {
   min-height: auto;
-  background-color: #ffffff;  /* fondo claro */
+  background-image: url('path/to/your/About.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   color: #222;                 /* color texto general */
   padding: 80px 20px;
   text-align: left;    
-  display: block;      
+  display: block;
+  position: relative;      
 }
+
+.section2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255,255,255,0.85); /* capa blanca semitransparente */
+  z-index: 0;
+  }
+
+  .section2 > * {
+    position: relative;
+    z-index: 1; /* asegura que el contenido esté por encima del overlay */
+  }
 
 /* Título principal */
 .section2 .section-title {
@@ -277,32 +295,59 @@ main {
 }
 /* ===== CONTENIDO INTERNO DE LAS TABS ===== */
 /* about*/
+/* ===== TAB CONTENT ===== */
 .tab-content {
-  padding: 80px 20px;
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 80px 40px;
+
+  box-sizing: border-box;
+
   background-color: #ffffff;
-  min-height: auto;
-  margin-left: 40px;
 }
 /* ===== ABOUT: TEXTO + IMAGEN ===== */
-.about-content {
-  display: grid;
-  grid-template-columns: 2fr 1fr; /* texto más ancho */
-  gap: 40px;
-  align-items: center;
-}
-
-/* Texto */
-.about-text {
-  max-width: 700px;
-  margin-top: 20px;
-  
-}
-
-/* Imagen */
-.about-image img {
+/* ===== HERO ABOUT ===== */
+.about-hero {
   width: 100%;
-  height: auto;
-  border-radius: 8px; /* opcional, queda más moderno */
+  margin: 40px auto;
+}
+
+.about-hero img {
+  width: 100%;
+  max-width: 1000px;
+
+  height: 420px;
+
+  object-fit: cover;
+
+  display: block;
+  margin: 0 auto;
+
+  border-radius: 14px;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* ===== ABOUT CONTENT ===== */
+.about-content {
+  width: 100%;
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  text-align: left;
+}
+
+.about-text {
+  width: 100%;
+}
+
+.about-text .section-text {
+  max-width: 100%;
+  line-height: 1.8;
 }
 
 /* RESPONSIVE */
@@ -310,11 +355,8 @@ main {
   .about-content {
     grid-template-columns: 1fr;
   }
-
-  .about-image {
-    order: -1; /* imagen arriba en móvil (opcional) */
-  }
 }
+
 /* ===== PROJECT INFO ===== */
 .project-info {
   margin-top: 50px;
