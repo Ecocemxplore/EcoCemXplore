@@ -131,7 +131,7 @@ html {
 
 /* Sección 1 (Portada) */
 .section1 {
-  margin-top: -20px;
+  margin-top: 0px;
   min-height: auto;
   position:relative;
   background-color: #ffffff;
@@ -146,7 +146,7 @@ html {
 
 /* Texto sobre la imagen */
 .overlay-text {
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   color: #ffffff;
