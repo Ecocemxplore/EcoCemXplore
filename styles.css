@@ -136,7 +136,7 @@ html {
   width: 100%;
   height: 100vh;
 
-  background-image: url("Images/Portada_1.jpg");
+  background-image: url("Portada_1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -185,7 +185,7 @@ html {
 /* Sección 2 */
 .section2 {
   min-height: auto;
-  background-image: url('Images/About.jpeg'); 
+  background-image: url('About.jpeg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
