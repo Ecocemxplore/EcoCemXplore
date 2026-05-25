@@ -184,11 +184,20 @@ html {
 
 /* Sección 2 */
 .section2 {
-  min-height: auto;
+  height: 100vh;
+  Position:relative;
+  
+
   background-image: url('About.jpeg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+  padding: 0 60px;
 
   color: #222;                 /* color texto general */
   padding: 80px 20px;
@@ -201,7 +210,7 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(255,255,255,0.85); /* capa blanca semitransparente */
+  background-color: rgba(255,255,255,0.35); /* capa blanca semitransparente */
   z-index: 0;
   }
 
