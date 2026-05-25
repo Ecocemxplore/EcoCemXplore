@@ -338,6 +338,49 @@ html {
   line-height: 1.6;
   margin-left: 40px;                   /* elimina margen extra */
 }
+
+.media-gallery {
+  display: flex;
+  gap: 15px;
+
+  margin-top: 30px;
+  margin-left: 40px;
+
+  overflow-x: auto;   /* 🔥 scroll horizontal si no cabe */
+  padding-bottom: 10px;
+}
+
+/* imágenes */
+.media-gallery img {
+  width: 220px;
+  height: 140px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+  flex-shrink: 0; /* 🔥 evita que se deformen */
+  transition: transform 0.3s ease;
+}
+
+/* hover */
+.media-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.media-gallery::-webkit-scrollbar {
+  height: 6px;
+}
+
+.media-gallery::-webkit-scrollbar-thumb {
+  background: #36a277;
+  border-radius: 10px;
+}
+
+
+
 /* Main */
 main {
   flex: 1;
@@ -890,6 +933,13 @@ main {
   }
 }
 /* ===== RESEARCH ACTIVITIES ===== */
+.section-research {
+  background: #ffffff !important;
+  background-image: none !important;
+
+  padding: 80px 20px;
+}
+
 .gallery {
   width: 100%;
   margin-left: 40px;
@@ -897,6 +947,7 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
   gap: 35px;
   padding: 0 0 100px 0;
+  
 }
 /* cada tarjeta */
 .item {
