@@ -185,7 +185,7 @@ html {
 /* Sección 2 */
 .section2 {
   min-height: auto;
-  background-image: url('path/to/your/About.jpeg'); 
+  background-image: url('Images/About.jpeg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
