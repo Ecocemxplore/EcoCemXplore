@@ -266,6 +266,47 @@ html {
   line-height: 1.6;
   margin-left: 40px;                   /* elimina margen extra */
 }
+/* Icono twitter*/
+.section3 {
+  position: relative;
+}
+
+/* botón a la derecha */
+.twitter-follow {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+
+  transform: translate(-50%, -50%); /* centra verticalmente y ajusta horizontalmente */
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background-color: #36a277;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+  white-space: nowrap; /* evita que el texto se divida en varias líneas */
+}
+
+/* icono */
+.twitter-box img {
+  width: 22px;
+  height: 22px;
+}
+
+/* hover */
+.twitter-box:hover {
+ background-color: #2b805d;
+ transform: translateY(-50%)scale(1.03);
+}
+
 /* Sección 4 */
 .section4 {
   min-height: auto;
