@@ -11,8 +11,28 @@
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
-  emailjs.init("Ek-voagZkTzMY9wh-");
+  emailjs.init("aKJ4uYqGkR7yi8G3s");
 </script>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_yjdjkfd",
+    "template_72ewp13",
+    this
+  ).then(function() {
+    alert("Message sent successfully!");
+    document.getElementById("contact-form").reset();
+  }, function(error) {
+    alert("Error sending message");
+    console.log(error);
+  });
+});
+</script>
+
+
  <!-- BODY -->
 <body>
 <header class="navbar">

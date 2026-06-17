@@ -50,8 +50,8 @@ document
     event.preventDefault();
 
     emailjs.sendForm(
-      "Ek-voagZkTzMY9wh-",
-      "template_ke7tspk",
+      "service_yjdjkfd",
+      "template_72ewp13",
       this
     )
     .then(() => {
