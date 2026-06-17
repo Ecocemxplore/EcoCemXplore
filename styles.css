@@ -343,9 +343,9 @@ html {
 
 .media-gallery {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
   margin: 30px auto 0 auto;
   padding: 10px 0;
   flex-wrap: nowrap; /* evita que las imágenes se envuelvan a la siguiente línea */
