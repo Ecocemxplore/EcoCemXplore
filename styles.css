@@ -190,7 +190,7 @@ html {
   Position:relative;
   
 
-  background-image: url('About.jpeg'); 
+  background-image: url('ABOUT US.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -201,11 +201,12 @@ html {
   
   padding: 0 60px;
 
-  color: #222;                 /* color texto general */
+  color: #fcfafa;                 /* color texto general */
   padding: 80px 20px;
   text-align: left;    
   display: block;
-  position: relative;      
+  position: relative;
+  font-weight: bold;      
 }
 
 .section2::before {
@@ -248,7 +249,7 @@ html {
 .section3 {
   min-height: auto;
   background-color: #ffffff;  /* fondo claro */
-  color: #222;                 /* color texto general */
+  color: #222222;                 /* color texto general */
   padding: 80px 20px;
   text-align: left;    
   display: block; 
