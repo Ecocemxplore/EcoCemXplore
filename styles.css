@@ -996,6 +996,25 @@ main {
   color: #222;
   margin-top: 5px;
 }
+.section {
+  margin-top: 60px;
+}
+
+.section .section-subtitle {
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+
+.section .section-subtitle::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #36a277;
+  margin-top: 10px;
+}
+
+
 
 /* ===== CONTACT ===== */
 /* ===== CONTACT ===== */
