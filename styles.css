@@ -1013,7 +1013,12 @@ main {
   background: #36a277;
   margin-top: 10px;
 }
-
+.section h2 {
+  margin-left:60px;
+  margin-bottom: 30px;
+  color: #36a277;
+  font-size: 1.6rem;
+}
 
 
 /* ===== CONTACT ===== */
